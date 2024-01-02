@@ -1,6 +1,6 @@
 ---
 title: "Class 1"
-author: ''
+author: 'your name here'
 output:
   word_document: default
   pdf_document: default
@@ -16,13 +16,14 @@ knitr::opts_chunk$set(error = TRUE)
 
 Plan:
 -   Class information
+-   Project management with R / git
 -   Learning Markdown
 
 # Markdown
 
 ## A simple markup language
 
-Markdown allows us to format text. Markdown can be compiled directly into a PDF, a Word file or an HTML file.
+Markdown allows us to format text. Markdown can be compiled directly into a Word file or an HTML file.
 
 For this class we only care about some basic formatting:
 
@@ -51,7 +52,7 @@ Multiply 5 and 10:
 # NOTE: we cannot use markdown in code chunks.  Here # means that we are creating a comment (notes that are not executable code).  We are not creating a header.
 ```
 
-Multiple 4 and 6, then square it
+Multiply 4 and 6, then square it
 
 ```{r}
 
@@ -63,16 +64,15 @@ R also contains *functions*. For instance, the function sqrt() calculates a squa
 
 ```
 
-
 # Exercise 1
 
 Expanding this notebook, complete the following tasks:
 
 1)  Create two new code chunks (using the green 'Insert' button in the top right).
 
-2)  In the first chunk, find the sum of 75, 83, 93, 34, 75 and 81 using math operators (+). Then try to find the sum using the function *sum()*. You can look up how to use the function *sum()* by typing ?sum in the console (bottom of your screen).
+2)  In the first code chunk, find the sum of 75, 83, 93, 34, 75 and 81 using math operators (+). Then try to find the sum using the function *sum()*. You can look up how to use the function *sum()* by typing ?sum in the console (bottom of your screen).
 
-3)  In the second chunk divide 75 by 5, then add 43 and then multiply 6 (use parentheses)
+3)  In the second code chunk divide 75 by 5, then add 43 and then multiply 6 (use parentheses)
 
 # Exercise 2
 
@@ -85,10 +85,13 @@ Using markdown, answer the following questions:
 
 # Prepare for submission
 
-You will submit all assignments and problem sets as Markdown files. To create a markdown file, click the down arrow to the right of the *Knit* button and select *Knit to Word*.
+You will submit all assignments and problem sets as knitted Markdown files. To knit a markdown file, click the down arrow to the right of the *Knit* button and select *Knit to Word*.
+
+If you do not have Microsoft Word, you can also knit to HTML, open it in a browser, and save the webpage as a PDF.
 
 # Check-in
 
 1.  On a scale ranging between 1 (Too Hard) and 10 (Too Easy), how was today's class:
 2.  What was the easiest thing to understand?
 3.  What was the most difficult thing to understand?
+4.  Were you able to download files via git? 
