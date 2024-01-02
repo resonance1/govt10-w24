@@ -54,7 +54,7 @@ Multiply 5 and 10:
 Multiple 4 and 6, then square it
 
 ```{r}
-hist(c(1:20))
+
 ```
 
 R also contains *functions*. For instance, the function sqrt() calculates a square root:
