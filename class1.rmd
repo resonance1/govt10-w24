@@ -1,6 +1,6 @@
 ---
 title: "Class 1"
-author: 'your name here'
+author: ''
 output:
   word_document: default
   pdf_document: default
@@ -54,7 +54,7 @@ Multiply 5 and 10:
 Multiple 4 and 6, then square it
 
 ```{r}
-
+hist(c(1:20))
 ```
 
 R also contains *functions*. For instance, the function sqrt() calculates a square root:
@@ -85,9 +85,7 @@ Using markdown, answer the following questions:
 
 # Prepare for submission
 
-You will submit all assignments and problem sets as knitted Markdown files. To knit a markdown file, click the down arrow to the right of the *Knit* button and select *Knit to Word*.
-
-If you do not have Microsoft Word, you can also knit to HTML, open it in a browser, and save the webpage as a PDF.
+You will submit all assignments and problem sets as Markdown files. To create a markdown file, click the down arrow to the right of the *Knit* button and select *Knit to Word*.
 
 # Check-in
 
