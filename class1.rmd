@@ -89,9 +89,16 @@ You will submit all assignments and problem sets as knitted Markdown files. To k
 
 If you do not have Microsoft Word, you can also knit to HTML, open it in a browser, and save the webpage as a PDF.
 
+
+# Optional Resources
+
+Canvas/Files/Data Analysis Chapter 1
+  - Covers using R and basic operations
+  
 # Check-in
 
 1.  On a scale ranging between 1 (Too Hard) and 10 (Too Easy), how was today's class:
 2.  What was the easiest thing to understand?
 3.  What was the most difficult thing to understand?
 4.  Were you able to download files via git? 
+
