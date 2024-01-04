@@ -35,7 +35,7 @@ The following variables are in the turnout.csv file:
 If you can sync with git, run the chunk below without modifying anything. If you cannot, uncomment the two following lines.
 
 ```{r}
-turnout <- read.csv("Problem Sets/data/turnout.csv")
+turnout <- read.csv("data/turnout.csv")
 
 #download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/Problem%20Sets/data/turnout.csv","turnout.csv")
 #turnout <- read.csv("turnout.csv")
