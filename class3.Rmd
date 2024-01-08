@@ -1,0 +1,254 @@
+---
+title: "Class 3"
+author: "Your name here"
+header-includes:
+   - \usepackage{pdfpages}
+output:
+  pdf_document: default
+---
+
+```{r setup, echo=F}
+library(knitr)
+opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+```
+
+# Plan
+* Logistics
+* Review
+* Learning R: More on manipulating data frames
+* Learning R: Handling missing data
+* Learning R: Practice with data frames (group work)
+
+# Review: Notes on variable creation (Problem Set)
+
+```{r}
+# Git
+turnout <- read_csv("Problem Sets/data/turnout.csv")
+
+# Non-git
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/Problem%20Sets/data/turnout.csv","turnout.csv")
+#turnout <- read.csv("turnout.csv")
+
+```
+
+2.1. Using the *$* symbol to reference specific columns in the dataset, create a new variable called **VAP_turnout** that contains the turnout rate for each year. To do so, divide the total votes by the voting age population. 
+
+```{r}
+
+```
+
+Create a new variable named *anes_vap_diff* that computes the difference between the actual turnout rate (calculated in 2.1) and ANES estimates of the turnout rate for each year.
+
+```{r}
+
+```
+
+# Manipulating Data frames
+
+# Creating variables with tidyverse
+
+Let's create a variable in the data frame called *rate* which is the total number of votes divided by the eligible population.
+
+```{r}
+
+```
+
+Another way to do this without writing out turnout$ over again is to use the %>% mutate() function. mutate() is also a shortcut when creating many variables.
+
+```{r}
+
+turnout %>% mutate()
+
+```
+
+To save the changes made by %>% mutate(), we need to overwrite the original data frame
+
+```{r}
+
+```
+
+
+## Removing specific columns
+
+If we want to get rid of a column, we can put "-" in front of the column name when running select(). Let's return the data frame, removing the *overseas* column.
+
+```{r}
+
+turnout %>% select()
+
+```
+
+
+## More filtering
+
+Let's filter the dataset to all years after 1990. To do this, we have to use the > operator.
+
+```{r}
+turnout %>% filter()
+```
+
+We can also use >= or <=
+
+```{r}
+turnout %>% filter()
+```
+
+If we want to exclude something, we use '!=' Let's exclude the 1982 observation.
+
+```{r}
+turnout %>% filter()
+```
+
+
+## Handling missing data
+
+R uses the value _NA_ to indicate missing data. Missing data will cause many functions to fail.
+
+Let's place some missing data in our data frame.
+
+```{r}
+turnout$rate[1] <- NA
+```
+
+Now, let's take the average of *rate* using mean():
+
+```{r}
+
+```
+
+For most functions, we can pass an additional argument to instruct R to ignore NAs, called na.rm=T
+
+```{r}
+
+```
+
+## Summary statistics and chaining
+
+Let's open up the enrollments dataset again:
+
+```{r}
+# Git
+enrollments <- read.csv("./class_data/enrollments.csv")
+
+# Non-Git
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/enrollments.csv" ,"./enrollments.csv")
+#enrollments <- read.csv("enrollments.csv")
+
+enrollments$freshmen <- floor(enrollments$enrollment / 4)
+
+```
+
+Recall that you were asked to find the average freshman enrollment for schools in Florida. The most efficient way to do this last time was to save a new dataset:
+
+```{r}
+
+
+```
+
+We can also use %>% summarize() to return summary statistics. To use summarize(), we place the the summary statistic function inside the parentheses: %>% summarize(function(column)) 
+
+```{r}
+
+florida %>% summarize()
+
+```
+
+This is not super efficient. But with tidyverse, we can also do multiple pipe operations at once. They always execute from left to right:
+
+dataset %>% function1 %>% function2
+
+```{r}
+
+```
+
+How do we handle NAs using summarize()?
+
+```{r}
+enrollments$freshman[1] <- NA
+
+```
+
+
+
+# Group Work
+
+Prior to the Syrian refugee crisis in 2015, many European political parties were already capitalizing on the perception that immigration to Europe had reached unsustainable levels. To investigate this trend, we will draw on demographic data provided by Eurostat. 
+
+```{r}
+# Git
+foreignpop <-  read.csv("./class_data/foreignpopulation.csv")
+
+# Non-git
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/foreignpopulation.csv","foreignpopulation.csv")
+#foreignpop <- read.csv("foreignpopulation.csv")
+
+
+```
+
+The dataset contains 6 columns:
+
+country                 Country name
+foreign_2011            Number of foreign-born residents in 2011
+foreign_2015            Number of foreign-born residents in 2015
+population_2011         Total number of residents in 2011
+population_2015         Total number of residents in 2015
+western                 1 if the country is traditionally in Western Europe (non-communist), 0 otherwise
+
+1. Use %>% mutate() to create two new variables within the data frame: pctforeign_2011 and pctforeign_2015. These variables should contain the percentage of each country's population that is foreign-born in each year.
+
+```{r}
+
+```
+
+2. Create a new variable in the data frame, delta_pctforeign, that measures the percentage point change in each country's foreign born population between 2011 and 2015. 
+
+```{r}
+
+```
+
+3. What is the average change, across all countries, in the percentage of foreign population between 2011 and 2015? What is the median change? 
+
+```{r}
+
+```
+
+4. Let's exclude countries with very small populations. Filter the data frame to only include countries with more than 5 million residents in 2015. Then recalculate the answer to #3. You can either save a new version of the dataframe, or use chaining.
+
+```{r}
+
+```
+
+5. Let's look at only those countries in Western Europe. Using the original version of the dataframe, filter the data and recalculate your answer to #3. You can either save a new version of the dataframe, or use chaining.
+
+```{r}
+
+```
+
+6. Lastly, let's look at only countries NOT in Western Europe. What is the average change in the percentage of foreign population between 2011 and 2015?
+
+```{r}
+
+```
+
+## Optional Resources
+
+Review:
+https://datacarpentry.org/R-ecology-lesson/03-dplyr.html
+  - Covers basic tidyverse commands we've covered so far
+  
+Prepare for Wed:
+https://datacarpentry.org/R-ecology-lesson/03-dplyr.html
+  - Read about the group_by() function
+ 
+https://jhudatascience.org/tidyversecourse/wrangle-data.html#filtering-data
+  - Read about filtering for two conditions at once
+ 
+Canvas --> Files/ Book Chapters/ Data Analysis, Chapter 2
+  - Read about causality
+  
+## Check-in
+
+1. On a scale ranging between 1 (Too Hard) and 10 (Too Easy), how was today's class: 
+2. What was the easiest thing to understand?
+3. What was the most difficult thing to understand?
