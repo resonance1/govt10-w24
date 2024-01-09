@@ -1,0 +1,148 @@
+---
+title: "Problem Set 2"
+author: "Your name here"
+output:
+  pdf_document: default
+---
+
+```{r setup, echo=F}
+library(knitr)
+library(tidyverse)
+opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+```
+
+# Criminal Records and Hiring [12 points]
+
+In this exercise, we will analyze the effect of having a criminal record on one's job prospects. 
+
+To examine the role of a criminal record, a researcher hired a pair of 23 year old white men and a pair of 23 year old black men and instructed them to apply for existing entry-level jobs in the city of Milwaukee. The men in each pair were matched on a number of dimensions, including physical appearance and self-presentation. As much as possible, the only difference between the two was that the researcher randomly varied which individual in the pair would indicate to potential employers that he had a criminal record related to drug offenses. Further, each week, the pair alternated which applicant would present himself as an ex-felon. In other words, each individual presented themselves as a felon half of the time. The researcher then compared callback rates.
+
+```{r}
+library(tidyverse)
+
+# Git
+crim_rec <- read.csv("Problem Sets/data/crime.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/Problem%20Sets/data/crime.csv","crime.csv")
+#crim_rec <- read.csv("crime.csv")
+
+```
+
+The relevant variables in the dataset are as follows:
+
+jobid	            Job ID number
+callback	        1 if applicant received a callback, 0 if the applicant did not receive a callback.
+black	            1 if the applicant identifies as black, 0 if the applicant does not identify as black. 
+crimrec          	1 if the applicant has a putative criminal record, 0 if the applicant does not.
+custserv        	1 if job is in the costumer service sector, 0 if it is not.
+interact          1 if the applicant spoke to the recruiter in person, 0 if not
+distance          Distance between the job and downtown Milwaukee
+manualskill	      1 if job requires manual skills, 0 if it does not.
+
+1. What proportion of all job applications received a callback? 
+
+```{r}
+
+```
+
+2. Calculate the *average treatment effect* of a criminal record on the callback rate. You can do this manually if needed after obtaining the mean values.
+
+```{r}
+
+
+```
+
+3. Evaluate the quality of the randomization by looking at the race of the applicant, as well as the type of job they applied to. Do you think this study likely identifies a causal relationship or a correlation? Why or why not? 
+
+```{r}
+
+```
+
+[ Short sentences here ]
+
+4. In this experiment, does the effect of having a criminal record (the average treatment effect) differ according to the race of the applicant? 
+
+```{r}
+
+
+```
+
+[ Short sentences here ]
+
+5. Reactions to crime in the inner city may differ from the suburbs. Re-assess the treatment effect of a criminal record, examining only employers in the customer service sector that were 10 miles or more from the city center. Are the effects larger or smaller?  
+
+```{r}
+
+
+```
+
+[ Short sentences here ]
+
+
+
+# Social desirability experiment (8 points)
+
+Gerber, Green & Latimer (2008) conducted an experiment which aimed to increase voter turnout in elections by 
+exploiting what scholars know about social desirability bias. 
+
+The research design randomly allocated citizens into one of four conditions:
+
+* Control - These individuals received no letter. 
+* Civic Duty - These individuals receiverd a letter saying it was a civic duty to vote
+* Hawthorne - These individuals received a letter saying researchers were observing whether they voted or not
+* Neighbor Shaming - These individuals received a letter saying their neighbors would be told if they did not vote
+
+  
+After sending the letters, the researchers observed whether individuals voted in the 2008 primaries. 
+
+Let's load the data 
+
+```{r}
+library(tidyverse)
+
+# Git
+social_pressure <- read.csv("Problem Sets/data/social.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/Problem%20Sets/data/social.csv","social.csv")
+#sociald <- read.csv("social.csv")
+```
+
+The variables in the dataset are as follows:
+
+hhsize          household size of voter
+messages        Message voter received (Civic Duty, Control, Neighbors, Hawthorne)
+sex             sex of voter (1=female,0=male)
+yearofbirth     year of birth of voter
+primary2004     whether a voter turnouted out in the 2004 Primary election (1=voted,0=abstained)
+primary2008     whether a voter turned out in the 2008 Primary election (1=voted, 0=abstained)
+
+1.1 Calculate the average turnout in the 2008 primaries for the 4 different groups ("Control","Civic Duty","Neighbors","Hawthorne"). Note: it is most efficient to do this using tidyverse commands. 
+
+```{r}
+
+
+```
+
+1.2 What was the *average treatment effect* of the Neighbor group? Interpret the result. 
+
+```{r}
+
+
+```
+
+[Full sentences here]
+
+1.3 For each of the 4 groups, what is the average household size? The average age, as of 2008? The proportion of females? The average turnout in 2004? 
+
+```{r}
+
+```
+
+1.4 What do the results from 1.3 suggest about the quality of the randomization in this experiment?
+
+[Full sentences here]
+
+
+
+Please submit as a .PDF using Canvas
