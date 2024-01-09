@@ -22,7 +22,8 @@ To examine the role of a criminal record, a researcher hired a pair of 23 year o
 library(tidyverse)
 
 # Git
-crim_rec <- read.csv("data/crime.csv")
+library(readr)
+crim_rec <- read_csv("data/crime.csv")
 
 #download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/Problem%20Sets/data/crime.csv","crime.csv")
 #crim_rec <- read.csv("crime.csv")
@@ -102,7 +103,9 @@ Let's load the data
 library(tidyverse)
 
 # Git
-social_pressure <- read.csv("data/social.csv")
+library(readr)
+social_pressure<- read_csv("data/social.csv")
+
 
 #download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/Problem%20Sets/data/social.csv","social.csv")
 #sociald <- read.csv("social.csv")
