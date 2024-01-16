@@ -88,7 +88,7 @@ The polity variable represents the so-called *polity score* from the Polity Proj
 
 
 
-# Exposure to Terrorism and Political Engagement [20 points]
+# Exposure to Terrorism and Political Engagement 
 
 Does exposure to terrorism have political implications? In this exercise, we examine a purported natural experiment. The researcher argues that within neighborhoods in New York City, whether individuals lost a family member or a neighbor in the terrorist attacks of September 11, 2001 (9/11) was random. They further hypothesize that those with some degree of personal exposure will become more politically engaged than someone who had no direct personal exposure to the event. 
 
