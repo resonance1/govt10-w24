@@ -1,0 +1,170 @@
+---
+title: "Problem Set 3"
+author: ""
+output:
+  pdf_document: default
+---
+
+```{r setup, echo=F}
+library(knitr)
+library(tidyverse)
+opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+```
+
+# Are assassinations a natural experiment?
+
+One longstanding debate in the study of international relations concerns the question of whether individual political leaders can make a difference. Some emphasize that leaders with different ideologies and personalities can significantly affect the course of a nation. Others argue that political leaders are severely constrained by historical and institutional forces.  Did individuals like Hitler, Mao, Roosevelt, and Churchill make a big difference?  The difficulty of empirically testing these arguments stems from the fact that the change of leadership is not random and there are many confounding factors to be adjusted for.
+
+In this exercise, we consider a *natural experiment* in which the authors argue that the success or failure of assassination attempts is essentially random.
+
+```{r}
+library(tidyverse)
+
+ldrs <- read.csv("./data/leaders.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/Problem%20Sets/data/leaders.csv","leaders.csv")
+#ldrs <- read.csv("leaders.csv")
+
+```
+
+
+| Name           | Description                                                                      |
+|----------------|----------------------------------------------------------------------------------|
+| country        | The name of the country                                                          |
+| year           | Year of assassination attempt                                                    |                                    
+| leader_age     | Age of the targeted leader                                                       |
+| polity_before  | Average polity score during the 3 year period prior to the attempt               |
+| polity_after   | Average polity score during the 3 year period after the attempt                  |
+| civilwar_before| 1 if country is in civil war during the 3 year period prior to the attempt, or 0 |
+| civilwar_after | 1 if country is in civil war during the 3 year period after the attempt, or 0    |
+| interwar_before| 1 if country is in international war during the 3 year period prior to the attem |
+| interwar_after | 1 if country is in international war during the 3 year period after the attempt, |
+| result         | Result of the assassination attempt, one of 10 categories                        |
+
+The polity variable represents the so-called *polity score* from the Polity Project.  The Polity Project systematically documents and quantifies the regime types of all countries in the world from 1800.  The polity score is a 21-point scale ranging from -10 (hereditary monarchy) to 10 (consolidated democracy).  
+
+1.1 What was the average polity score of countries where assassination attempts occurred, before the attempt?
+
+```{r}
+
+```
+
+1.2 Were any leaders of fully consolidated democracies (10 on the polity scale) the targets of an assassination attempt?
+
+```{r}
+
+```
+ 
+1.3 Create a new binary variable in the dataset that is 1 if the attack resulted in the leaders death, and 0 otherwise. What proportion of attacks resulted in the leaders' death? 
+
+```{r}
+
+```
+
+1.4 Is a successful assassination attempt linked with further democratization or a descent into dictatorship?  To assess this, evaluate whether the *change* in polity scores is different for countries that faced successful vs. unsuccessful assassination attempts. Use the indicator you created in 1.3 as the treatment variable.
+
+```{r}
+
+```
+
+[Full sentence(s) here]
+
+1.5 Let's examine balance between the treated and control group in this natural experiment. What is the average polity score before an attempt, for successful and non-successful assassinations? What is the average age of the targeted leader? What is the proportion of countries that were engaged in a civil or international war in the 3 years prior to the attempt?
+
+```{r}
+
+```
+
+1.6 Let's visualize some of these differences. Create boxplots of leader_age, separately for the treated and control groups.
+
+```{r}
+
+```
+
+1.7 Given the results above, evaluate the quality of this natural experiment. 
+
+[Full sentences here]
+
+
+
+# Exposure to Terrorism and Political Engagement [20 points]
+
+Does exposure to terrorism have political implications? In this exercise, we examine a purported natural experiment. The researcher argues that within neighborhoods in New York City, whether individuals lost a family member or a neighbor in the terrorist attacks of September 11, 2001 (9/11) was random. They further hypothesize that those with some degree of personal exposure will become more politically engaged than someone who had no direct personal exposure to the event. 
+
+The researcher randomly selected households within New York City, and coded whether an individual in that particular household died in the attacks. Then, they surveyed all the friends and neighbors of these originally sampled individuals. Friends and neighbors who were connected to a household with a death in it were labeled the treatment group, whereas friends and neighbors of unaffected individuals were coded as the control group. 
+
+All characteristics except voting in the 2002 election, treatment, and victim.status were measured prior to the treatment.
+
+treatment           	Linked to victims (1) vs control group (no link) (0)
+victim.status	        Type of link: Families (2) vs neighbors (3) 
+voted_2000	          Voting in the 2000 general election (Y=yes,at the polls, A=yes,absentee, N=No)
+voted_2002	          Voting in the 2002 general election (1=Yes, 0=No)
+fam.members	          Number of family members living with voter at their address
+age	                  Voter’s age
+party	                Voter’s party affiliation (D=Democrat, R=Republicans, I=independent, N=no affiliation)
+sex	                  Voter’s reported sex (F=female, M=Male)
+pct.white	            Proportion of non-Hispanic white voters living on the same block
+median.income	        Median income of voters living on the same block
+
+
+To load the data, run the code below without modifying anything:
+
+```{r}
+library(tidyverse)
+
+terrorism_vote <- read.csv("./data/terrorism.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/Problem%20Sets/data/terrorism.csv","terrorism.csv")
+#terrorism_vote <- read.csv("terrorism.csv")
+
+```
+
+
+2.1 Using the full sample of respondents, calculate the Average Treatment Effect of the terrorist attacks on voter turnout for the 2002 election. Briefly contextualize the effect size relative to the standard deviation.
+
+```{r}
+
+
+```
+
+[ 1-2 sentences here ]
+
+
+2.2 Let's reformat the data to facilitate further analysis. The variables for party, voted_2000, and sex contain nominal information. Create new versions of these variables using the following rules: 
+
+- Create a variable called *dem*. Assign the value of 1 to all Democrats and 0 to all others.
+- Create a variable called *rep*. Assign the value of 1 to all Republicans and 0 to all others.
+- Create a variable called *voted2000_binary* based on voted_2000. Assign the value of 1 if the individual voted in a given election, and 0 otherwise.
+- Create a variable called *sex_binary* and assign 0 to female and 1 to male
+
+```{r}
+
+```
+
+2.3 Evaluate the plausibility of the natural experiment by evaluating all variables measured prior to the treatment. 
+
+```{r}
+
+
+```
+
+2.4 Since the attacks targeted workers in the financial district, we might be especially concerned about imbalance on the basis of income or race. Use a boxplot to visually evaluate differences in the distribution of the *median.income* and *pct_white* variables between treated and control units. Then for the treated and control groups, calculate the 10th and 90th percentiles for each variable. Are the distributions similar? 
+
+```{r}
+
+```
+
+[ 1 sentence here ]
+
+2.5 Does the evidence thus far suggest that this is a valid natural experiment? Why or why not?
+
+[ Short sentences here ]
+
+2.6 Let's see whether it matters whether one is a family member or a neighbor. Recalculate the average treatment effect for the 2002 election using (a) only those individuals who are family members, and (b) only those individuals who are neighbors. Which treatment effect is larger? 
+
+```{r}
+
+
+```
+[ 1 sentence here ]
