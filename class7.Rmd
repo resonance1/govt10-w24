@@ -1,0 +1,174 @@
+---
+title: "Class 7"
+author: "Your name"
+header-includes:
+   - \usepackage{pdfpages}
+output:
+  pdf_document: default
+---
+
+```{r setup, echo=F}
+library(knitr)
+opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+```
+
+# Plan
+* Group work - natural experiment
+* Lecture (data types / distributions)
+* Group work follow-up 
+
+# Group work: Natural Experiment: Indiscriminate Violence and Insurgency
+
+What is the relationship between state violence and insurgency? While some researchers and military analysts argue that indiscriminate violence is effective in suppressing insurgencies, many argue that violence actually increases insurgent attacks by creating cooperative relationships between affected citizens and insurgents. In this exercise, we will examine this question using data on indiscriminate Russian artillery fire in Chechnya from 2000 to 2005. 
+
+```{r}
+chechen <- read.csv("./class_data/chechen.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/chechen.csv","chechen.csv")
+#chechen <- read.csv("chechen.csv")
+
+```
+
+The variables of interest are as follows:
+
+fire            Whether Russians struck a village with artillery fire (equal to 1) or not (equal to 0)
+deaths          Estimated number of individuals killed during Russian artillery fire
+preattack       The number of insurgent attacks before Russian artillery fire
+postattack      The number of insurgent attacks after Russian artillery fire
+
+1. What proportion of villages were attacked by Russian artillery? What was the average number of deaths associated with an attack?
+
+```{r}
+
+```
+
+2. Estimate the average treatment effect of indiscriminate fire on insurgency. The outcome variable is _postattack_
+
+```{r}
+
+```
+
+3. The results to the previous question should suggest that villages which experienced attacks had less insurgent activity. However, one possible explanation is that these villages also had less insurgent activity to begin with. This is possible because this is not an RCT. To examine this, look at the _preattack_ variable, which measures the time period before the Russian artillery attacks occurred. What is the difference in the average number of insurgent attacks between the villages that were later hit by artillery fire and those that were not? 
+
+```{r}
+
+```
+
+4.Does this analysis support the claim that indiscriminate violence reduced insurgency attacks in Chechnya? If you were in charge of briefing military leaders on these results, what caveats and/or additional data might you want to draw on?
+
+[Answer]
+
+
+# Data Types (Lecture)
+
+```{r}
+resume <- read.csv("./class_data/resume.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/resume.csv","resume.csv")
+#resume <- read.csv("resume.csv")
+```
+
+To map a discrete variable to a new binary variable, we have to use logical statements.
+
+This can be done using ifelse(logical condition, value if true, value if false). Let's create a new variable called white that receives a 1 if the resume contains a white-flagged name, and 0 otherwise.
+
+```{r}
+
+```
+
+We can also use the mutate(case_when()) syntax. 
+
+```{r}
+
+```
+
+Practice creating a new variable called sex_binary, where female is 1 and male is 0
+
+```{r}
+
+```
+
+
+# Distributions (Lecture)
+
+A histogram is useful for examining a single distribution. We use hist() to generate a histogram of a continuous vector. 
+
+```{r}
+
+hist()
+#abline(v=mean(,na.rm=T),col="red")
+
+```
+
+A boxplot is useful for comparing distributions. We use the formula boxplot(y~x), where y is the outcome variable and x is the group.
+
+```{r}
+
+boxplot()
+
+```
+
+We can find the standard deviation of a distribution by using sd(). Let's find the standard deviation of postattack in the chechnya example.
+
+```{r}
+
+sd()
+
+```
+
+The standard deviation of the control group is useful for benchmarking the substantive size of the average treatment effect: 
+
+```{r}
+
+```
+
+We can find percentiles for a distribution by using quantile():
+
+```{r}
+
+quantile()
+
+```
+
+
+# Group work
+
+Let's look at the Chechen data again.
+
+1. Let's first change our outcome variable in the Chechen case to measure the change in insurgent attacks. This fixes any remaining imbalance that might existing in the preattack variable. To do so, create a new variable called diffattack that measures the change in attacks over time.
+
+```{r}
+
+```
+
+2. Separately for the treated and control groups, calculate the median of diffattack as well as the 90th and 99th percentiles. 
+
+```{r}
+
+```
+
+
+_Only if Time_
+
+3. Average treatment effects can sometimes be driven by outliers. In other words, even if most units did not respond to the treatment, a large response among a small subset of treated units could generate an average difference between treated and control groups. For instance, consider the case where there are 10 villages. 9 villages did not change their resistance activity following artillery fire. However, the remaining village had a decrease of 10 attacks in the period following artillery fire. In this case the average treatment effect on diffattack would have been -1, even though most villages did not change their behavior. When we look at just the average treatment effect, we cannot distinguish this case from a hypothetical situation in which each of the 10 villages had 1 less attack following the artillery fire -- the average treatment effect would be identical (-1).
+
+Based on your answers above, is the average treatment effect in the Chechen study likely influenced by outliers? In other words, is the observed reduction in violence concentrated in a subset of villages, or did most villages decrease violent resistance following artillery fire?
+
+[Answer here]
+
+4. What factors characterize potential outliers? To examine this, create a new binary variable in the dataset called large_effect that receives a 1 when the number of attacks decreased by 4 or more (diffattack <= -4). Then, using your new variable, compare the average number of deaths experienced by this group of villages compared to the rest of the sample. 
+
+```{r}
+
+
+```
+
+
+
+## Check-in
+
+1. On a scale ranging between 1 (Too Hard) and 10 (Too Easy), how was today's class: 
+2. What was the easiest thing to understand?
+3. What was the most difficult thing to understand?
+
