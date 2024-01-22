@@ -1,0 +1,227 @@
+---
+title: "Class 8"
+author: "Your name"
+header-includes:
+   - \usepackage{pdfpages}
+output:
+  pdf_document: default
+---
+
+```{r setup, echo=F}
+library(knitr)
+opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+```
+
+# Plan
+* Review: Assessing Distributions
+* Review: Interpreting effect sizes
+* Short Lecture: Regression Discontinuity 
+* Group work: regression discontinuity
+
+# Review: Assessing Distributions
+
+Load Data:
+
+```{r}
+library(tidyverse)
+
+chechen <- read.csv("./class_data/chechen.csv")
+crim_rec <- read_csv("./Problem Sets/data/crime.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/chechen.csv","chechen.csv")
+#chechen <- read.csv("chechen.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/Problem%20Sets/data/crime.csv","crime.csv")
+#crim_rec <- read.csv("crime.csv")
+
+```
+
+If randomization is conducted correctly, we expect that background characteristics (those assigned prior to treatment), will have similar average values between the treated and control group.
+
+But accurate randomization also implies that the distributions of these variables will look similar. 
+
+Recall the criminal record study, which was an RCT. Let's see how the distribution of *distance* looks like when comparing the treated (crimrec==1) and control groups (crimrec==0).
+
+We can compare distributions in different ways:
+
+1. Looking at percentiles (including medians)
+2. Examining histograms
+3. Examining boxplots
+
+```{r}
+
+crim_rec %>% group_by(crimrec) %>% summarize(mean(distance,na.rm=T))
+
+```
+
+Now let's examine a natural experiment rather than an RCT:
+
+In Chechnya, let's compare the preattack variable. The treatment variable is *fire*
+
+```{r}
+
+chechen %>% group_by(fire) %>% summarize(mean(preattack))
+
+```
+
+
+# Review: Interpreting effect sizes
+
+What is a large treatment effect? We often call this a *substantively significant* effect.
+
+We can use two heuristics:
+
+1. Real-world importance
+
+For instance, a political ad that shifts vote intentions by 1 percentage point may be enough to make the difference in a close election.
+
+2. If we are unsure, we can compare the ATE to the original distribution
+
+
+Demonstration:
+
+```{r}
+
+ate <- 20000
+city1 <- rnorm(5000,50000,1000)
+city2 <- rnorm(5000,50000,15000)
+
+```
+
+Chechen example:
+
+```{r}
+treat <- chechen %>% filter(fire==1) %>% summarize(mean(postattack)) 
+control <- chechen %>% filter(fire==0) %>% summarize(mean(postattack)) 
+
+ate <- treat-control
+ate
+
+```
+
+Let's contextualize the effect size by scaling by standard deviation
+
+```{r}
+
+
+```
+
+Why might we have a large standard deviation in this case?
+
+```{r}
+
+```
+
+We'll do the same thing for the criminal record study:
+
+```{r}
+treat <- crim_rec %>% filter(crimrec==1) %>% summarize(mean(callback))
+control <- crim_rec %>% filter(crimrec==0) %>% summarize(mean(callback))
+
+ate <- treat-control
+ate
+
+```
+
+
+# Lecture: Regression Discontinuity
+
+
+# Group Work: Regression Discontinuity
+
+We are going to examine the monetary returns to political office in the United Kingdom, by comparing the lifetime wealth of candidates who barely won a parliamentary election to those candidates who barely lost.
+
+This study looks at the winners and losers of a single election. The sample is limited to those individuals who had died before the study was completed (2009); this way their full earnings over the lifecourse can be observed.
+
+The assumption is that candidates who barely won an election are similar to those who barely lost. However, the relatively small sample size of candidates implies that we cannot restrict the sample to very small values of the running variable (in this case, victory or loss margin). We will explore whether we can obtain findings by examining observations on either side of the victory/loss cutoff, selecting a cutoff that enables the Law of Large Numbers to apply.
+
+Relevant variables:
+
+ln.gross        Log of wealth upon death (from probate records)
+yob             Year of birth
+yod             Year of death
+female          Whether candidate is female(1) or not (0)
+margin.pre      Average victory or loss margin in prior elections (a signal of candidate quality)
+margin          Victory or loss margin in the election being assessed; 
+                    this determines the discontinuity, and is the "running variable" we will use to narrow the analysis window
+party           political party
+
+```{r}
+library(tidyverse)
+
+british_mp <- read.csv("./class_data/MPs.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/MPs.csv","MPs.csv")
+#british_mp <- read.csv("MPs.csv")
+
+
+```
+
+Create a new variable that receives a 1 if the vote margin is positive (indicating a victory), and a 0 if is negative (indicating a loss). This will be our treatment variable.
+
+```{r}
+
+
+```
+
+Using the treatment variable created above, compare the background characteristics (yob,yod,margin.pre,female) of all candidates who won an election to the candidates who lost. Are the treatment and control groups similar on average?
+
+```{r}
+
+```
+
+Create a histogram of *margin* to examine the distribution of the running variable
+
+```{r}
+
+```
+
+Now explore narrowing the window using filter() on the *margin* variable so that it only includes candidates who won or lost an election by +- 4 percentage points. Recalculate differences in background characteristics. Are the differences smaller? If so, why might we expect this to be the case?
+
+```{r}
+
+```
+
+[ Answer here]
+
+Using the filtered dataset (+- 4 percentage points), calculate the average treatment effect on ln.gross (gross lifetime earnings)
+
+```{r}
+
+```
+
+Ln.gross a logged variable, so to back out the original treatment effect in pounds, exponentiate the average treatment effect using the function exp(). What are the lifetime returns to office, in pounds, if we assume that winning an election or losing is randomly assigned?
+
+```{r}
+
+```
+
+How would you interpret causality in this natural experiment? What, if anything, would increase your confidence in the results?
+
+[Answer here]
+
+
+_If Time_
+
+The more background characteristics we have to evaluate, the better. Convert the information in the 'school' variable to a numeric variable or variables. Then assess differences between the treatment and control groups. Do your conclusions change?
+
+```{r}
+
+```
+
+Calculate the average treatment effects, separately for Labour and Conservative MPs. Before reporting the ATE, check that the treated and control groups are still reasonably balanced within the window that you chose. Widen or narrow the window as necessary to achieve this.
+
+```{r}
+
+
+```
+
+
+
+## Check-in
+
+1. On a scale ranging between 1 (Too Hard) and 10 (Too Easy), how was today's class: 
+2. What was the easiest thing to understand?
+3. What was the most difficult thing to understand (leave blank if nothing)?
+
