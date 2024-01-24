@@ -1,0 +1,179 @@
+---
+title: "Problem Set 4"
+author: ""
+output:
+  pdf_document: default
+---
+
+```{r setup, echo=F}
+library(knitr)
+library(tidyverse)
+opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+```
+
+## Education and Far-Right Voting (Regression Discontinuity)
+
+Far-right parties are on the rise in Europe. How does education relate to the propensity of supporting a far-right party?
+
+This study evaluates this question by drawing on data from the European Social Survey, a nationally representative survey conducted every few years in European countries.
+
+```{r}
+library(tidyverse)
+ess <- read.csv("./data/ess.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/Problem%20Sets/data/ess.csv","ess.csv")
+#ess<- read.csv("ess.csv")
+```
+
+The relevant variables in the dataset are as follows:
+
+minority           Whether the survey respondent self-identifies as an ethnic minority (1) or not (0)
+father_citizen     Whether the survey respondent's father was a citizen at the time they were born (1) or not (0)
+father_secondary   Whether the survey respondent's father achieved a secondary-level education (1) or not (0)
+female             Whether the survey respondent identifies as female (1) or not (0)
+eduyrs             Number of years of education completed by the survey respondent
+close_far_right    Whether the respondent feels close to a far-right party (1) or not (0)
+years_to_reform    Number of years between the respondents' birth cohort and the birth cohort affected by a schooling reform. 
+
+1.1 Let's first assess the correlation between support for far-right parties and education. Do individuals who say they support far-right parties have a lower or higher number of years of education, on average?
+
+```{r}
+
+```
+
+1.2 Why should we be cautious about interpreting the relationship described in 1.1?
+
+*short answer here*
+
+1.3 The researchers in this study identified a situation that might lead to as-if random variation in years of education. Specifically, they call attention to schooling reforms implemented in Europe which increased the mandatory number of years of schooling in several countries.
+
+For each individual in the survey, the study authors coded a variable, *years to reform*, which indicates how an individual was affected by a schooling reform. Negative numbers mean that the individual was born too early to be affected by the reform. Positive numbers (or 0) mean the individual was affected by a reform which increased the mandatory number of years of schooling.
+
+*years to reform* is the 'running variable'; it indicates how close the individual was to the arbitrary (with respect to birth dates) change in schooling laws. For instance, individuals with a value of -1 were born 1 year before the school cohort that was affected by the reform. Individuals with a value of 1 were born 1 year after the first cohort affected by the reform, etc.
+
+Let's begin by examining the running variable with a histogram:
+
+```{r}
+
+```
+
+1.4 Create a new binary treatment variable that receives a 1 if *years to reform* is greater than or equal to 0. 
+
+```{r}
+
+```
+
+1.5 Let's verify the assumptions of the design. First, do treated and untreated individuals differ with respect to the years of education they completed?
+
+```{r}
+
+```
+
+*short answer here*
+
+1.6 Using the binary treatment variable, evaluate whether groups on either side of the arbitrary cutoff are comparable with respect to background characteristics. Use all participants when conducting this comparison, and evaluate all pre-treatment variables. Interpret the results.
+
+```{r}
+
+```
+
+*short answer here*
+
+1.7 Now we will implement the regression discontinuity design. To do so, filter the data to include only those individuals within 2 years of the arbitrary cutoff (e.g. -2 to 2). Then reassess differences between the treated and control group. Interpret the results.
+
+```{r}
+
+```
+
+*short answer here*
+
+1.8 Using the regression discontinuity design and the analysis window defined above, calculate the average treatment effect of additional mandatory schooling on feeling close to a far right party. Interpret the results.
+
+```{r}
+
+```
+
+*short answer here*
+
+1.9 Based on the available evidence, is this result likely causal or correlational? What factors, if any, would increase your confidence in the study's conclusions?
+
+*short answer here*
+
+
+## Municipal Mergers  (Difference-in-Differences)
+
+For many years, researchers have argued that small-sized municipalities create the potential for welfare gains because public sectors can be better tailored to local preferences. However, a counterargument holds that the large-sized municipalities are more cost-effective due to economies of scale.
+
+If scale effects exist in municipalities, we should, all things equal, observe a negative correlation between municipality size and per capita administrative costs.
+
+The Danish structural reform in late 2007 provides an unique opportunity. The reform was quick, based on objective factors, and mergedmany municipalities within six months. This created a variation between merged (treated) and not merged (control).
+
+Note that amalgamation results in a change in the unit of analysis. The control group (those that did not experience amalgamation) has the same municipalities before and after the structural reform.  However, the units in the treatment group change due to merging. In this exercise, we designate merged municipalities as treated units and calculate their outcomes before amalgamation as an average. For example, suppose a municipality A in this dataset is a result of merging the municipalities B, C, and D. During the pre-treatment period (2005-2007), the outcome `costs` is the average of the outcomes from B, C, and D.
+
+------------------------------------------------------------------------------
+ Name                Description
+ ------------------- ---------------------------------------------------------
+ `year`               Year. (pre-treatment period is 2005-2007, post-treatment
+                        period is 2008-2011)
+
+ `costs`              The outcome variable. Administrative costs per capita (1000s of Danish Kroner)
+                     
+ `treatment`          The municipality is a result of amalgamation (1, treated group)
+                        or not (0, control group).
+ 
+ `region_id`             Region ID (1-5) 
+ 
+ `municipality_id`    Municipality ID (there are 98 unique municipalities)
+ 
+------------------------------------------------------------------------------
+
+```{r}
+library(tidyverse)
+admin_costs <- read.csv("./data/admin_costs.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/Problem%20Sets/data/admin_costs.csv","admin_costs.csv")
+#admin_costs <- read.csv("admin_costs.csv")
+
+```
+
+### Question 1
+
+2.1 What proportion of municipalities in the dataset merged in each of the 5 regions?
+
+```{r}
+
+
+```
+
+2.2 Calculate the difference-in-differences (DiD) estimate, using the years 2007 (pre) and 2008 (post). Interpret the effect size.
+
+```{r}
+
+
+```
+
+*short answer here*
+
+2.3 Calculate the average administrative costs per capita in each year, separately for the treated and control groups. 
+
+```{r}
+
+```
+
+2.4 Interpret the results so far. Can we interpret the relationship as causal? 
+
+*short answer here*
+
+
+2.5 Calculate the difference-in-differences (DiD) estimate for the years 2006 (pre) and 2007 (post). Do these results increase or decrease your confidence that the relationship is causal? Why?
+
+```{r}
+
+
+
+```
+
+*short answer here*
+
+
