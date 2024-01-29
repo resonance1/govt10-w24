@@ -1,0 +1,183 @@
+---
+title: "Class 11"
+author: "Your name"
+header-includes:
+   - \usepackage{pdfpages}
+output:
+  pdf_document: default
+---
+
+```{r setup, echo=F}
+library(knitr)
+opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+```
+
+# Plan
+* Midterm/Week's Schedule
+* Short Lecture - Correlation
+* Group Work on Correlation
+* Short Lecture - Survey sampling
+* Sampling error in R
+
+
+# Short Lecture: Correlation
+
+# Exploring descriptive relationships in data
+
+Descriptive correlations can provide helpful information to policymakers (remember that any causal relationship between two variables will have a non-zero correlation). In this exercise, you will evaluate the factors that are correlated with violent crime, using data from Denmark.
+
+```{r}
+denmark <- read.csv("./class_data/denmark.csv")
+
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/denmark.csv","denmark.csv")
+#denmark<- read.csv("denmark.csv")
+
+```
+
+Variables:
+
+violentcrime_rate          Violent crime (scaled by population)
+murderrate                 Murders (scaled by population)
+lowincome_rate             Poverty Rate (scaled by population)
+unemp_rate                 Unemployment Rate (scaled by population)
+pct1565                    % of Population Aged 15-65 (scaled by population)
+pctforeign                 % Non-citizen population (scaled by population)
+sd_share                   Social Democratic Share of council seats
+pop                        Population
+eEducationhead             Spending on education, per capita
+eHousinghead               Spending on public housing, per capita
+eSocialhead                Spending on social expenditures, per capita
+eTrafficInfrastructure     Spending on infrastructure, per capita
+eTotalhead                 Total spending, per capita
+drug_total                 Total drug offenses
+murder                     Total murders
+violentcrime               Total violent crimes
+
+
+Let's explore potential correlations between violent crime and other municipal-level variables using a scatter plot.
+
+```{r}
+y <- denmark$violentcrime_rate
+x <- 
+  
+plot()
+```
+
+We can add a trend line to the plot using lines(lowess(x,y))
+
+```{r}
+```
+
+We can also evaluate the correlation numerically using cor(x,y,use="complete.obs"):
+
+```{r}
+```
+
+# Group work
+
+With your neighbors, explore other correlations. Which factors are most strongly correlated with violent crime? Use a separate code chunks for each variable you explore. 
+
+```{r}
+```
+
+```{r}
+```
+
+```{r}
+```
+
+
+# Short Lecture - Sampling Error
+
+
+## Sampling and Survey Error
+
+Supports Biden     = 1
+Does not support Biden = 0 
+
+The support for Biden in this particular state is 40%:
+
+```{r}
+state <- c(rep(1,40000),rep(0,60000))
+
+```
+
+To take a sample, we use the _sample()_ function. The format is:
+
+  sample(whatwewanttosample,sizeofsample,replace=F)
+
+Let's draw a sample of size 10, and examine the mean.
+
+```{r}
+sample(,,replace=F)
+
+```
+
+Now let's draw new samples of 100 and 500, and compare the mean.
+
+```{r}
+
+```
+
+Now let's draw a 1000 person sample. What is the expected error, using the equation covered in class?
+
+```{r}
+
+
+```
+
+To test whether our formula for the expected error works, let's draw 100 samples, each of size 1000. Then we'll plot the average value from each sample. A distribution of sample means is known as a *sampling distribution* 
+
+```{r}
+# You do not need to know this code
+n<-1000
+samples <- 100
+out <- c()
+for (i in 1:samples){
+  out <- c(out,mean(sample(state,n,replace=FALSE)))
+}
+
+```
+
+A polling company randomly sampled 500 Americans to ask them if they approved supplying arms to Ukraine. On a scale of 1 to 5, where 1 meant "strongly oppose" and 5 meant "strongly support", the average response was 4.12. The standard deviation was 0.25. What was the expected error of this poll?
+
+```{r}
+
+```
+
+# Only if time: item non-response
+
+Let's load a survey of Afghan citizens. 
+
+```{r}
+library(tidyverse)
+afghan <- read.csv("./class_data/afghan.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/afghan.csv","afghan.csv")
+#afghan<- read.csv("afghan.csv")
+
+```
+
+One of the most common items individuals refuse to respond to in surveys are questions about income. How many fall into this category in the afghan survey?
+
+To determine this, we can use is.na() on the _income_ variable.
+
+```{r}
+
+```
+
+How does non-response vary by other characteristics? Let's look at responses to the income question as a function of employment
+
+```{r}
+
+```
+
+
+## Check-in
+
+1. On a scale ranging between 1 (Too Hard) and 10 (Too Easy), how was today's class: 
+2. What was the easiest thing to understand?
+3. What was the most difficult thing to understand?
+
