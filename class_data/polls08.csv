@@ -1,0 +1,1333 @@
+state,Pollster,Obama,McCain,middate,days.until
+AL,SurveyUSA-2,36,61,10/27/08,8
+AL,Capital Survey-2,34,54,10/15/08,20
+AL,SurveyUSA-2,35,62,10/8/08,27
+AL,Capital Survey-2,35,55,10/6/08,29
+AL,Rasmussen-1,39,60,9/22/08,43
+AL,SurveyUSA-2,34,64,9/16/08,49
+AL,ARG-4,36,58,9/14/08,51
+AL,U. of South Alabama-8,25,52,9/11/08,54
+AL,Capital Survey-7,35,55,9/6/08,59
+AL,Capital Survey-7,34,47,8/1/08,95
+AL,Rasmussen-1,37,55,7/31/08,96
+AL,Rasmussen-1,36,51,6/26/08,131
+AL,Capital Survey-2,36,49,6/25/08,132
+AL,Capital Survey-5,33,57,5/31/08,157
+AL,Rasmussen-1,32,60,5/27/08,161
+AL,SurveyUSA-3,34,57,5/17/08,171
+AL,Capital Survey-9,36,55,4/20/08,198
+AL,SurveyUSA-3,32,64,4/12/08,206
+AL,Rasmussen-1,37,55,4/2/08,216
+AL,U. of South Alabama-4,30,57,3/25/08,224
+AL,SurveyUSA-3,35,62,3/15/08,234
+AL,SurveyUSA-3,40,54,2/27/08,251
+AL,SurveyUSA-2,29,63,1/16/08,293
+AL,Election 2004-1,37,63,1/1/08,308
+AK,Research 2000-3,39,58,10/29/08,6
+AK,Rasmussen-1,41,57,10/28/08,7
+AK,Ivan Moore Research-3,42,53,10/18/08,17
+AK,Research 2000-3,38,57,10/15/08,20
+AK,Rasmussen-1,40,55,10/6/08,29
+AK,Ivan Moore Research-4,38,55,10/4/08,31
+AK,Fairleigh Dickinson U.-5,37,55,9/19/08,46
+AK,Research 2000-3,38,55,9/16/08,49
+AK,ARG-3,39,55,9/10/08,55
+AK,Rasmussen-1,33,64,9/9/08,56
+AK,Ivan Moore Research-4,35,54,8/31/08,65
+AK,Rasmussen-1,39,44,7/30/08,97
+AK,Rasmussen-1,40,45,7/17/08,110
+AK,Research 2000-3,41,51,7/15/08,112
+AK,Rasmussen-1,41,45,6/16/08,141
+AK,Rasmussen-1,41,50,5/14/08,174
+AK,Research 2000-3,42,49,5/13/08,175
+AK,Rasmussen-1,43,48,4/7/08,211
+AK,SurveyUSA-3,43,48,2/27/08,251
+AK,Election 2004-1,35,62,1/1/08,308
+AZ,ARG-3,46,50,10/29/08,6
+AZ,Research 2000-3,47,48,10/29/08,6
+AZ,Mason-Dixon-2,44,48,10/27/08,8
+AZ,Rasmussen-1,46,51,10/26/08,9
+AZ,Opinion Research-6,46,53,10/25/08,10
+AZ,Arizona State U.-4,44,46,10/24/08,11
+AZ,Northern Arizona U.-10,41,49,10/22/08,13
+AZ,Zimmerman-4,42,44,10/17/08,18
+AZ,Rasmussen-1,38,59,9/29/08,36
+AZ,Arizona State U.-4,38,45,9/26/08,39
+AZ,ARG-4,39,56,9/12/08,53
+AZ,Arizona State U.-3,30,40,8/15/08,81
+AZ,Mason-Dixon-3,41,47,8/14/08,82
+AZ,Rasmussen-1,36,52,7/30/08,97
+AZ,Rasmussen-1,40,49,6/25/08,132
+AZ,Arizona State U.-2,28,38,6/20/08,137
+AZ,Rocky Mtn Poll-9,39,50,5/16/08,172
+AZ,Arizona State U.-4,38,47,4/25/08,193
+AZ,Rasmussen-1,37,57,4/15/08,203
+AZ,Northern Arizona U.-10,33,55,4/3/08,215
+AZ,SurveyUSA-3,39,51,2/27/08,251
+AZ,Arizona State U.-4,38,49,2/22/08,256
+AZ,Election 2004-1,45,55,1/1/08,308
+AR,ARG-4,44,51,10/29/08,6
+AR,Rasmussen-1,44,54,10/27/08,8
+AR,Research 2000-2,41,52,10/21/08,14
+AR,U. of Arkansas-21,36,51,10/11/08,24
+AR,Rasmussen-1,42,51,9/22/08,43
+AR,ARG-3,41,53,9/21/08,44
+AR,Rasmussen-1,37,47,7/14/08,113
+AR,Rasmussen-1,41,45,6/16/08,141
+AR,Rasmussen-1,39,48,6/12/08,145
+AR,Rasmussen-1,33,57,5/12/08,176
+AR,Rasmussen-1,30,59,3/18/08,231
+AR,Opinion Res.-6,27,43,3/8/08,241
+AR,SurveyUSA-3,33,53,2/27/08,251
+AR,Election 2004-1,45,54,1/1/08,308
+CA,SurveyUSA-3,60,36,10/30/08,5
+CA,Rasmussen-1,61,34,10/25/08,10
+CA,Field Poll-11,55,33,10/23/08,12
+CA,SurveyUSA-2,59,35,10/15/08,20
+CA,Public Policy Inst. of Calif.-8,56,33,10/15/08,20
+CA,Rasmussen-1,56,40,10/9/08,26
+CA,SurveyUSA-2,55,39,10/4/08,31
+CA,SurveyUSA-2,53,43,9/23/08,42
+CA,Rasmussen-1,56,39,9/22/08,43
+CA,ARG-3,53,39,9/19/08,46
+CA,Public Policy Inst. of Calif.-8,50,40,9/12/08,53
+CA,Field Poll-10,52,36,9/9/08,56
+CA,Rasmussen-1,51,37,8/20/08,76
+CA,Pub. Policy Inst. of Calif.-8,48,39,8/15/08,81
+CA,Rasmussen-1,50,38,7/24/08,103
+CA,Pub. Policy Inst. of Calif.-15,50,35,7/15/08,112
+CA,Field Poll-7,54,30,7/11/08,116
+CA,Rasmussen-1,58,30,6/23/08,134
+CA,SurveyUSA-3,53,41,6/18/08,139
+CA,Field Poll-12,52,35,5/21/08,167
+CA,LA Times-2,47,40,5/20/08,168
+CA,Rasmussen-1,52,38,5/20/08,168
+CA,SurveyUSA-3,49,41,5/17/08,171
+CA,Rasmussen-1,50,43,4/16/08,202
+CA,SurveyUSA-3,50,43,4/12/08,206
+CA,SurveyUSA-3,54,40,3/15/08,234
+CA,Public Policy Inst. of Calif.-8,49,40,3/14/08,235
+CA,Rasmussen-1,53,38,3/12/08,237
+CA,SurveyUSA-3,51,40,2/27/08,251
+CA,SurveyUSA-3,61,34,2/16/08,262
+CA,Election 2004-1,55,44,1/1/08,308
+CO,ARG-3,52,45,10/29/08,6
+CO,Mason-Dixon-2,49,44,10/28/08,7
+CO,Marist Coll.-2,51,45,10/27/08,8
+CO,Rasmussen-1,50,46,10/26/08,9
+CO,Insider Advantage-1,53,45,10/26/08,9
+CO,Opinion Research-6,53,45,10/25/08,10
+CO,Financial Dynamics-5,48,44,10/25/08,10
+CO,GfK Roper-5,50,41,10/24/08,11
+CO,Public Opinion Strat.-3,52,40,10/22/08,13
+CO,Insider Advantage-1,51,46,10/20/08,15
+CO,Rasmussen-1,51,46,10/19/08,16
+CO,Rasmussen-1,52,45,10/16/08,19
+CO,Opinion Research-4,51,47,10/12/08,23
+CO,Suffolk U.-4,47,43,10/11/08,24
+CO,Quinnipiac U.-5,52,43,10/10/08,25
+CO,Insider Advantage-1,51,45,10/6/08,29
+CO,Rasmussen-1,51,45,10/5/08,30
+CO,Mason-Dixon-3,44,44,9/30/08,35
+CO,Rasmussen-1,49,48,9/28/08,37
+CO,ARG-3,45,48,9/24/08,41
+CO,Insider Advantage-1,50,41,9/23/08,42
+CO,Rasmussen-1,50,47,9/23/08,42
+CO,Opinion Research-3,51,47,9/22/08,43
+CO,Ciruli Assoc.-5,44,43,9/21/08,44
+CO,Quinnipiac U.-8,49,45,9/17/08,48
+CO,Insider Advantage-1,51,41,9/17/08,48
+CO,Rasmussen-1,46,48,9/14/08,51
+CO,Financial Dynamics-5,45,44,9/13/08,52
+CO,ARG-4,44,46,9/11/08,54
+CO,Insider Advantage-2,49,46,9/9/08,56
+CO,Rasmussen-1,49,46,9/7/08,58
+CO,Opinion Research-3,46,47,8/25/08,71
+CO,Suffolk U.-4,44,39,8/22/08,74
+CO,Quinnipiac U.-7,46,47,8/18/08,78
+CO,Mason-Dixon-3,46,43,8/14/08,82
+CO,Rasmussen-1,45,47,8/13/08,83
+CO,Rocky Mtn Poll-3,41,44,8/12/08,84
+CO,Rasmussen-1,49,42,7/21/08,106
+CO,Quinnipiac U.-9,44,46,7/18/08,109
+CO,Quinnipiac U.-8,49,44,6/20/08,137
+CO,Rasmussen-1,43,41,6/17/08,140
+CO,Rasmussen-1,48,42,5/19/08,169
+CO,Rasmussen-1,46,43,4/16/08,202
+CO,Rasmussen-1,46,46,3/17/08,232
+CO,SurveyUSA-3,50,41,2/27/08,251
+CO,Election 2004-1,47,52,1/1/08,308
+CT,U. of Connecticut-5,56,31,10/20/08,15
+CT,Rasmussen-1,56,39,10/14/08,21
+CT,SurveyUSA-2,54,38,9/24/08,41
+CT,Pulsar Research-5,49,35,9/21/08,44
+CT,ARG-3,54,39,9/18/08,47
+CT,Rasmussen-1,53,41,9/16/08,49
+CT,Rasmussen-1,51,36,7/31/08,96
+CT,Research 2000-3,57,35,7/1/08,126
+CT,Rasmussen-1,52,35,6/30/08,127
+CT,Quinnipiac U.-4,56,35,6/27/08,130
+CT,Rasmussen-1,47,44,5/29/08,159
+CT,Quinnipiac U.-6,52,35,3/21/08,228
+CT,Rasmussen-1,50,38,3/11/08,238
+CT,SurveyUSA-3,55,34,2/27/08,251
+CT,Election 2004-1,54,44,1/1/08,308
+DC,ARG-3,82,13,9/12/08,53
+DC,Election 2004-1,90,9,1/1/08,308
+DE,SurveyUSA-2,63,33,10/27/08,8
+DE,Rasmussen-1,56,41,10/10/08,25
+DE,West Chester U.-3,56,38,10/7/08,28
+DE,SurveyUSA-2,57,37,9/22/08,43
+DE,Fairleigh Dickinson U.-5,56,36,9/19/08,46
+DE,ARG-3,51,40,9/14/08,51
+DE,Rasmussen-1,55,43,9/13/08,52
+DE,SurveyUSA-3,50,41,2/27/08,251
+DE,Election 2004-1,53,46,1/1/08,308
+FL,Zogby-4,48,46,10/31/08,4
+FL,ARG-3,50,46,10/30/08,5
+FL,Mason-Dixon-2,47,45,10/29/08,6
+FL,Datamar-2,47,47,10/29/08,6
+FL,Rasmussen-1,51,47,10/26/08,9
+FL,LA Times-3,50,43,10/26/08,9
+FL,Datamar-2,49,44,10/25/08,10
+FL,Opinion Research-6,51,47,10/25/08,10
+FL,Financial Dynamics-5,45,44,10/25/08,10
+FL,Zogby-4,47,47,10/24/08,11
+FL,Suffolk U.-4,49,44,10/24/08,11
+FL,GfK Roper-5,45,43,10/24/08,11
+FL,Quinnipiac U.-5,47,45,10/24/08,11
+FL,Insider Advantage-1,48,47,10/22/08,13
+FL,Polling Company-3,49,42,10/21/08,14
+FL,Mason-Dixon-2,45,46,10/20/08,15
+FL,Rasmussen-1,48,49,10/19/08,16
+FL,Quinnipiac U.-6,49,44,10/18/08,17
+FL,SurveyUSA-2,47,49,10/16/08,19
+FL,Research 2000-3,49,45,10/14/08,21
+FL,Insider Advantage-1,48,44,10/13/08,22
+FL,Datamar-2,47,42,10/12/08,23
+FL,Opinion Research-4,51,46,10/12/08,23
+FL,Rasmussen-1,51,46,10/12/08,23
+FL,Rasmussen-1,50,47,10/8/08,27
+FL,Research 2000-3,49,44,10/7/08,28
+FL,Rasmussen-1,52,45,10/5/08,30
+FL,Mason-Dixon-3,48,46,10/5/08,30
+FL,Insider Advantage-1,49,46,9/30/08,35
+FL,Opinion Research-3,51,47,9/29/08,36
+FL,Suffolk U.-4,46,42,9/28/08,37
+FL,Rasmussen-1,47,47,9/28/08,37
+FL,Quinnipiac U.-3,51,43,9/28/08,37
+FL,SurveyUSA-2,47,48,9/27/08,38
+FL,Rasmussen-1,47,48,9/24/08,41
+FL,ARG-3,47,46,9/24/08,41
+FL,Rasmussen-1,46,51,9/21/08,44
+FL,Mason-Dixon-3,47,45,9/17/08,48
+FL,SurveyUSA-2,45,51,9/16/08,49
+FL,Research 2000-4,45,46,9/16/08,49
+FL,Schroth/Polling Co.-4,45,47,9/15/08,50
+FL,ARG-4,46,46,9/15/08,50
+FL,Opinion Research-3,48,48,9/15/08,50
+FL,Rasmussen-1,44,49,9/14/08,51
+FL,Financial Dynamics-5,44,44,9/13/08,52
+FL,Research 2000-7,45,46,9/12/08,53
+FL,Insider Advantage-2,42,50,9/9/08,56
+FL,Rasmussen-1,48,48,9/7/08,58
+FL,Quinnipiac U.-5,43,50,9/7/08,58
+FL,Mason-Dixon-2,45,44,8/25/08,71
+FL,Quinnipiac U.-8,43,47,8/20/08,76
+FL,ARG-3,46,47,8/19/08,77
+FL,Rasmussen-1,43,46,8/18/08,78
+FL,Insider Advantage-1,44,48,8/11/08,85
+FL,SurveyUSA-3,44,50,8/2/08,94
+FL,Quinnipiac U.-7,46,44,7/26/08,101
+FL,Rasmussen-1,46,45,7/22/08,105
+FL,ARG-3,45,47,7/20/08,107
+FL,Rasmussen-1,41,48,6/26/08,131
+FL,Rasmussen-1,39,47,6/18/08,139
+FL,ARG-5,49,44,6/15/08,142
+FL,Quinnipiac U.-8,47,43,6/12/08,145
+FL,Rasmussen-1,40,50,5/19/08,169
+FL,Quinnipiac U.-8,41,45,5/16/08,172
+FL,Quinnipiac U.-7,43,44,4/26/08,192
+FL,Rasmussen-1,38,53,4/10/08,208
+FL,Quinnipiac U.-8,37,46,3/27/08,222
+FL,Rasmussen-1,43,47,3/12/08,237
+FL,SurveyUSA-3,45,47,2/27/08,251
+FL,Rasmussen-1,37,53,2/16/08,262
+FL,Election 2004-1,47,52,1/1/08,308
+GA,Rasmussen-1,47,52,10/30/08,5
+GA,Research 2000-3,44,47,10/29/08,6
+GA,Insider Advantage-1,47,48,10/27/08,8
+GA,Opinion Research-6,47,52,10/25/08,10
+GA,Insider Advantage-1,48,47,10/23/08,12
+GA,Mason-Dixon-2,43,49,10/22/08,13
+GA,Rasmussen-1,46,51,10/22/08,13
+GA,Research 2000-2,43,49,10/14/08,21
+GA,Opinion Research-4,45,53,10/12/08,23
+GA,SurveyUSA-2,43,51,10/11/08,24
+GA,Insider Advantage-1,46,49,10/9/08,26
+GA,Rasmussen-1,45,54,10/7/08,28
+GA,Insider Advantage-1,44,50,9/30/08,35
+GA,Research 2000-3,43,50,9/30/08,35
+GA,SurveyUSA-2,44,52,9/28/08,37
+GA,ARG-4,39,57,9/19/08,46
+GA,Insider Advantage-1,43,51,9/17/08,48
+GA,Rasmussen-1,43,54,9/16/08,49
+GA,SurveyUSA-3,41,57,9/15/08,50
+GA,Insider Advantage-1,38,56,9/10/08,55
+GA,Rasmussen-1,43,50,8/14/08,82
+GA,Rasmussen-1,39,48,7/17/08,110
+GA,Insider Advantage-1,44,46,7/2/08,125
+GA,Rasmussen-1,43,53,6/26/08,131
+GA,Insider Advantage-1,43,44,6/18/08,139
+GA,Rasmussen-1,41,51,6/4/08,153
+GA,Rasmussen-1,39,53,5/6/08,182
+GA,Rasmussen-1,40,53,3/20/08,229
+GA,SurveyUSA-3,41,54,2/27/08,251
+GA,Election 2004-1,41,58,1/1/08,308
+HI,Rasmussen-1,68,27,9/20/08,45
+HI,ARG-6,63,32,9/9/08,56
+HI,SurveyUSA-3,61,31,2/27/08,251
+HI,Election 2004-1,54,45,1/1/08,308
+ID,Research 2000-2,33,62,9/16/08,49
+ID,Rasmussen-1,29,68,9/9/08,56
+ID,ARG-3,25,68,9/9/08,56
+ID,Greg Smith-5,29,52,8/20/08,76
+ID,Research 2000-3,37,53,7/29/08,98
+ID,SurveyUSA-3,39,52,2/27/08,251
+ID,Election 2004-1,30,69,1/1/08,308
+IL,Rasmussen-1,60,38,11/1/08,3
+IL,Research 2000-4,59,35,10/21/08,14
+IL,U. of Wisconsin-4,61,32,10/20/08,15
+IL,Market Shares-3,56,32,10/17/08,18
+IL,Rasmussen-1,56,39,10/13/08,22
+IL,Rasmussen-1,56,40,9/17/08,48
+IL,Research 2000-4,56,36,9/16/08,49
+IL,U. of Wisconsin-4,53,37,9/15/08,50
+IL,ARG-4,51,45,9/14/08,51
+IL,Rasmussen-1,53,38,8/12/08,84
+IL,Rasmussen-1,50,37,7/8/08,119
+IL,SurveyUSA-3,60,31,2/27/08,251
+IL,Election 2004-1,55,45,1/1/08,308
+IN,Zogby-4,44,49,10/31/08,4
+IN,ARG-4,48,48,10/29/08,6
+IN,Rasmussen-2,46,49,10/28/08,7
+IN,SurveyUSA-4,47,47,10/28/08,7
+IN,Selzer-3,46,45,10/27/08,8
+IN,Zogby-4,44,50,10/24/08,11
+IN,Research 2000-3,48,47,10/24/08,11
+IN,Howey-Gauge-2,45,47,10/23/08,12
+IN,SurveyUSA-2,49,45,10/21/08,14
+IN,U. of Wisconsin-4,51,41,10/20/08,15
+IN,Rasmussen-1,43,50,10/7/08,28
+IN,Opinion Research-4,46,51,10/4/08,31
+IN,Research 2000-5,46,46,10/1/08,34
+IN,Research 2000-3,45,46,9/29/08,36
+IN,SurveyUSA-2,45,48,9/28/08,37
+IN,Rasmussen-2,47,49,9/17/08,48
+IN,ARG-4,44,47,9/16/08,49
+IN,U. of Wisconsin-4,43,47,9/15/08,50
+IN,Opinion Research-3,45,51,9/15/08,50
+IN,Selzer-3,47,44,9/15/08,50
+IN,Howey-Gauge-2,43,45,8/29/08,67
+IN,Rasmussen-3,42,46,8/20/08,76
+IN,SurveyUSA-3,44,50,8/17/08,79
+IN,SurveyUSA-3,48,47,6/22/08,135
+IN,Ind. Legis. Insight-6,38,47,5/29/08,159
+IN,Research 2000-4,43,51,4/22/08,196
+IN,Selzer-4,49,41,4/21/08,197
+IN,IPFW U.-3,44,51,4/15/08,203
+IN,SurveyUSA-3,41,50,2/27/08,251
+IN,SurveyUSA-2,40,50,2/3/08,275
+IN,Election 2004-1,39,60,1/1/08,308
+IA,Selzer-4,54,37,10/29/08,6
+IA,SurveyUSA-2,55,40,10/28/08,7
+IA,Research 2000-3,53,39,10/28/08,7
+IA,Marist Coll.-2,52,42,10/23/08,12
+IA,Rasmussen-1,52,44,10/23/08,12
+IA,Mason-Dixon-2,51,40,10/22/08,13
+IA,U. of Wisconsin-4,52,39,10/20/08,15
+IA,Research 2000-4,54,39,10/20/08,15
+IA,SurveyUSA-2,54,41,10/8/08,27
+IA,Research 2000-2,55,39,9/29/08,36
+IA,Rasmussen-1,51,43,9/25/08,40
+IA,Marist Coll.-4,51,41,9/19/08,46
+IA,ARG-4,51,44,9/18/08,47
+IA,SurveyUSA-2,54,43,9/17/08,48
+IA,Research 2000-3,53,39,9/16/08,49
+IA,U. of Wisconsin-4,45,45,9/15/08,50
+IA,Selzer-3,52,40,9/9/08,56
+IA,Opinion Research-3,55,40,9/1/08,64
+IA,U. of Iowa-10,50,43,8/8/08,88
+IA,Rasmussen-1,46,41,8/7/08,89
+IA,Rasmussen-1,51,41,7/10/08,117
+IA,SurveyUSA-4,49,45,6/14/08,143
+IA,Rasmussen-1,45,38,6/10/08,147
+IA,SurveyUSA-2,47,38,5/21/08,167
+IA,Rasmussen-1,44,42,5/13/08,175
+IA,Research 2000-3,49,41,4/22/08,196
+IA,SurveyUSA-3,49,42,4/12/08,206
+IA,Rasmussen-1,46,42,3/31/08,218
+IA,SurveyUSA-3,50,44,3/15/08,234
+IA,SurveyUSA-3,50,41,2/27/08,251
+IA,Rasmussen-1,44,41,2/18/08,260
+IA,SurveyUSA-3,51,41,2/16/08,262
+IA,Election 2004-1,49,50,1/1/08,308
+KS,SurveyUSA-2,37,58,10/27/08,8
+KS,SurveyUSA-2,41,53,10/21/08,14
+KS,Rasmussen-1,41,54,10/13/08,22
+KS,SurveyUSA-2,41,53,9/21/08,44
+KS,Rasmussen-1,38,58,9/18/08,47
+KS,ARG-4,31,63,9/8/08,57
+KS,SurveyUSA-3,35,58,8/19/08,77
+KS,Rasmussen-1,37,52,8/11/08,85
+KS,Rasmussen-1,32,52,7/14/08,113
+KS,Rasmussen-1,37,47,6/11/08,146
+KS,Research 2000-3,40,51,6/3/08,154
+KS,SurveyUSA-3,39,49,5/17/08,171
+KS,Rasmussen-1,34,55,5/13/08,175
+KS,SurveyUSA-3,37,54,4/12/08,206
+KS,SurveyUSA-3,39,51,3/15/08,234
+KS,SurveyUSA-3,41,50,2/27/08,251
+KS,SurveyUSA-3,44,50,2/16/08,262
+KS,Election 2004-1,37,62,1/1/08,308
+KY,SurveyUSA-4,40,56,10/30/08,5
+KY,Rasmussen-1,43,55,10/29/08,6
+KY,Research 2000-3,39,56,10/28/08,7
+KY,Mason-Dixon-3,42,51,10/28/08,7
+KY,Rasmussen-1,44,52,10/21/08,14
+KY,Research 2000-3,39,55,10/20/08,15
+KY,SurveyUSA-3,41,54,10/19/08,16
+KY,Research 2000-3,39,53,10/15/08,20
+KY,Rasmussen-1,42,52,9/30/08,35
+KY,Mason-Dixon-4,41,53,9/23/08,42
+KY,SurveyUSA-2,38,57,9/21/08,44
+KY,Research 2000-3,37,55,9/16/08,49
+KY,ARG-5,37,57,9/10/08,55
+KY,SurveyUSA-3,37,55,8/10/08,86
+KY,Rasmussen-1,39,49,7/29/08,98
+KY,Research 2000-3,35,56,7/29/08,98
+KY,Rasmussen-10,39,49,7/24/08,103
+KY,Rasmussen-1,35,51,6/25/08,132
+KY,SurveyUSA-4,41,53,6/14/08,143
+KY,SurveyUSA-3,32,56,5/17/08,171
+KY,Research 2000-3,33,58,5/8/08,180
+KY,SurveyUSA-3,29,63,4/12/08,206
+KY,SurveyUSA-3,28,64,3/15/08,234
+KY,SurveyUSA-3,33,54,2/27/08,251
+KY,SurveyUSA-2,32,61,2/3/08,275
+KY,Election 2004-1,40,60,1/1/08,308
+LA,Loyola U.-3,40,43,10/25/08,10
+LA,Southeastern La. U.-4,38,51,10/21/08,14
+LA,Rasmussen-1,41,57,10/21/08,14
+LA,Rasmussen-1,40,55,9/25/08,40
+LA,ARG-4,43,50,9/10/08,55
+LA,Rasmussen-1,38,55,8/17/08,79
+LA,Rasmussen-1,37,56,7/9/08,118
+LA,Opinion Res.-3,36,52,6/27/08,130
+LA,Rasmussen-1,41,50,5/28/08,160
+LA,Rasmussen-1,41,52,4/9/08,209
+LA,Opinion Res.-15,35,51,4/2/08,216
+LA,SurveyUSA-3,39,54,2/27/08,251
+LA,Election 2004-1,42,57,1/1/08,308
+ME,Rasmussen-1,56,43,11/1/08,3
+ME,SurveyUSA-2,54,39,10/19/08,16
+ME,Critical Insights-4,56,35,10/17/08,18
+ME,Research 2000-2,53,38,10/14/08,21
+ME,Pan Atlantic SMS-4,51,39,10/14/08,21
+ME,Rasmussen-1,51,46,10/2/08,33
+ME,SurveyUSA-2,49,44,9/22/08,43
+ME,Rasmussen-1,50,46,9/17/08,48
+ME,ARG-3,51,41,9/9/08,56
+ME,Research 2000-3,52,38,9/9/08,56
+ME,Rasmussen-1,49,36,8/12/08,84
+ME,Rasmussen-1,46,36,7/17/08,110
+ME,Rasmussen-1,55,33,6/16/08,141
+ME,Pan Atlantic SMS-9,37,26,6/14/08,143
+ME,Critical Insights-27,51,31,6/14/08,143
+ME,Rasmussen-1,51,38,5/14/08,174
+ME,Rasmussen-1,49,39,4/1/08,217
+ME,SurveyUSA-3,53,39,2/27/08,251
+ME,Election 2004-1,53,45,1/1/08,308
+MD,Rasmussen-1,60,37,9/20/08,45
+MD,ARG-3,54,39,9/18/08,47
+MD,Gonzales Research-8,52,38,9/1/08,64
+MD,Rasmussen-1,53,41,8/18/08,78
+MD,SurveyUSA-3,53,40,2/27/08,251
+MD,Gonzales Res.-8,51,37,2/26/08,252
+MD,Election 2004-1,56,43,1/1/08,308
+MA,SurveyUSA-2,56,39,10/27/08,8
+MA,Suffolk U.-3,53,34,10/21/08,14
+MA,SurveyUSA-2,59,35,10/13/08,22
+MA,Rasmussen-1,62,34,10/13/08,22
+MA,Rasmussen-1,58,38,9/23/08,42
+MA,SurveyUSA-2,55,39,9/22/08,43
+MA,ARG-3,55,39,9/21/08,44
+MA,Rasmussen-1,51,36,8/5/08,91
+MA,Suffolk U.-4,47,38,8/1/08,95
+MA,Rasmussen-1,53,33,6/30/08,127
+MA,SurveyUSA-3,53,40,6/26/08,131
+MA,Suffolk U.-3,53,30,6/9/08,148
+MA,Rasmussen-1,51,38,5/29/08,159
+MA,SurveyUSA-3,46,41,5/17/08,171
+MA,Rasmussen-1,51,39,4/23/08,195
+MA,SurveyUSA-3,48,46,4/12/08,206
+MA,Rasmussen-1,49,42,3/18/08,231
+MA,SurveyUSA-3,47,47,3/15/08,234
+MA,SurveyUSA-3,49,42,2/27/08,251
+MA,SurveyUSA-3,48,46,2/16/08,262
+MA,Election 2004-1,62,37,1/1/08,308
+MI,Selzer-4,53,37,10/29/08,6
+MI,Rasmussen-1,53,43,10/28/08,7
+MI,EPIC-MRA-3,50,38,10/27/08,8
+MI,EPIC-MRA-4,51,37,10/20/08,15
+MI,U. of Wisconsin-4,58,36,10/20/08,15
+MI,Quinnipiac U.-5,54,38,10/10/08,25
+MI,Rasmussen-1,56,40,10/8/08,27
+MI,Selzer-3,51,38,9/23/08,42
+MI,Opinion Research-3,51,46,9/22/08,43
+MI,Rasmussen-1,51,44,9/21/08,44
+MI,EPIC-MRA-3,48,38,9/21/08,44
+MI,Mason-Dixon-6,46,46,9/20/08,45
+MI,Financial Dynamics-5,47,39,9/20/08,45
+MI,ARG-4,48,46,9/17/08,48
+MI,Quinnipiac U.-8,48,44,9/17/08,48
+MI,Marketing Resource Grp.-5,43,46,9/17/08,48
+MI,Marist Coll.-2,52,43,9/16/08,49
+MI,EPIC-MRA-4,43,42,9/15/08,50
+MI,U. of Wisconsin-4,48,44,9/15/08,50
+MI,Rasmussen-1,51,46,9/10/08,55
+MI,Insider Advantage-2,44,45,9/9/08,56
+MI,Opinion Research-3,49,45,9/8/08,57
+MI,EPIC-MRA-4,43,41,8/19/08,77
+MI,Selzer-4,46,39,8/18/08,78
+MI,Rasmussen-1,47,40,8/7/08,89
+MI,Quinnipiac U.-9,46,42,7/18/08,109
+MI,EPIC-MRA-4,43,41,7/14/08,113
+MI,Rasmussen-1,50,42,7/10/08,117
+MI,Quinnipiac U.-8,48,42,6/20/08,137
+MI,Rasmussen-1,45,42,6/9/08,148
+MI,SurveyUSA-2,37,41,5/27/08,161
+MI,EPIC-MRA-4,40,44,5/20/08,168
+MI,Rasmussen-1,44,45,5/8/08,180
+MI,Rasmussen-1,44,45,5/7/08,181
+MI,EPIC-MRA-6,43,41,4/5/08,213
+MI,Rasmussen-1,42,43,3/25/08,224
+MI,Rasmussen-1,41,44,3/10/08,239
+MI,SurveyUSA-3,46,45,2/27/08,251
+MI,Election 2004-1,51,48,1/1/08,308
+MN,SurveyUSA-3,49,46,10/31/08,4
+MN,Princeton Survey-3,53,42,10/30/08,5
+MN,Rasmussen-1,55,43,10/28/08,7
+MN,Research 2000-3,53,38,10/28/08,7
+MN,Mason-Dixon-2,48,40,10/27/08,8
+MN,U. of Minnesota-5,56,37,10/26/08,9
+MN,Rasmussen-1,56,41,10/22/08,13
+MN,U. of Wisconsin-4,57,38,10/20/08,15
+MN,Financial Dynamics-5,50,40,10/18/08,17
+MN,St. Cloud State U.-9,42,37,10/18/08,17
+MN,SurveyUSA-3,50,44,10/17/08,18
+MN,Princeton Survey-2,52,41,10/16/08,19
+MN,Star Tribune-2,52,41,10/16/08,19
+MN,Research 2000-2,52,39,10/15/08,20
+MN,Quinnipiac U.-5,51,40,10/10/08,25
+MN,Rasmussen-1,52,45,10/7/08,28
+MN,SurveyUSA-2,49,47,10/6/08,29
+MN,ARG-4,47,46,10/5/08,30
+MN,U. of Minnesota-3,54,40,10/4/08,31
+MN,Princeton Survey-3,55,37,10/1/08,34
+MN,SurveyUSA-2,46,47,9/30/08,35
+MN,Opinion Research-3,54,43,9/29/08,36
+MN,ARG-3,48,47,9/19/08,46
+MN,Rasmussen-1,52,44,9/18/08,47
+MN,Quinnipiac U.-8,47,45,9/17/08,48
+MN,U. of Wisconsin-4,47,45,9/15/08,50
+MN,Princeton Survey-3,45,45,9/11/08,54
+MN,SurveyUSA-2,49,47,9/10/08,55
+MN,Opinion Research-3,53,41,9/1/08,64
+MN,SurveyUSA-2,47,45,8/13/08,83
+MN,Rasmussen-1,46,42,8/13/08,83
+MN,U. of Minnesota-11,48,38,8/12/08,84
+MN,Rasmussen-1,49,37,7/22/08,105
+MN,Quinnipiac U.-9,46,44,7/18/08,109
+MN,Rasmussen-1,52,34,7/10/08,117
+MN,Quinnipiac U.-8,54,37,6/20/08,137
+MN,SurveyUSA-4,47,46,6/14/08,143
+MN,Rasmussen-1,52,39,6/11/08,146
+MN,Rasmussen-1,53,38,5/22/08,166
+MN,SurveyUSA-3,47,42,5/17/08,171
+MN,Star Tribune-4,51,38,5/13/08,175
+MN,Rasmussen-1,52,38,4/22/08,196
+MN,SurveyUSA-3,49,43,4/12/08,206
+MN,Rasmussen-1,47,43,3/19/08,230
+MN,SurveyUSA-3,46,47,3/15/08,234
+MN,SurveyUSA-3,49,42,2/27/08,251
+MN,Rasmussen-1,53,38,2/16/08,262
+MN,SurveyUSA-3,55,40,2/16/08,262
+MN,Election 2004-1,51,48,1/1/08,308
+MS,Research 2000-3,40,53,10/28/08,7
+MS,Rasmussen-1,45,53,10/27/08,8
+MS,U. of South Alabama-11,33,46,10/18/08,17
+MS,USA Polling Group-11,33,46,10/18/08,17
+MS,Research 2000-2,40,50,10/14/08,21
+MS,Rasmussen-1,44,52,9/30/08,35
+MS,ARG-4,39,55,9/14/08,51
+MS,Research 2000-3,39,52,9/9/08,56
+MS,Rasmussen-1,41,54,8/21/08,75
+MS,Rasmussen-1,41,52,7/28/08,99
+MS,Research 2000-3,42,51,7/22/08,105
+MS,Rasmussen-1,44,50,6/24/08,133
+MS,Rasmussen-1,44,50,5/27/08,161
+MS,Research 2000-3,39,54,5/20/08,168
+MS,SurveyUSA-3,41,54,2/27/08,251
+MS,Election 2004-1,40,60,1/1/08,308
+MO,Zogby-4,47,46,10/31/08,4
+MO,Mason-Dixon-2,46,47,10/29/08,6
+MO,Insider Advantage-1,47,50,10/29/08,6
+MO,ARG-3,48,48,10/29/08,6
+MO,Rasmussen-1,48,47,10/26/08,9
+MO,SurveyUSA-2,48,48,10/25/08,10
+MO,Opinion Research-6,48,50,10/25/08,10
+MO,Zogby-4,48,46,10/24/08,11
+MO,Mason-Dixon-2,45,46,10/22/08,13
+MO,Research 2000-4,48,47,10/21/08,14
+MO,Rasmussen-1,49,44,10/19/08,16
+MO,Suffolk U.-3,44,45,10/18/08,17
+MO,Rasmussen-1,52,46,10/15/08,20
+MO,Opinion Research-4,48,49,10/12/08,23
+MO,Rasmussen-1,50,47,10/12/08,23
+MO,SurveyUSA-2,51,43,10/11/08,24
+MO,Rasmussen-1,50,47,10/5/08,30
+MO,ARG-3,46,49,10/5/08,30
+MO,Opinion Research-3,49,48,9/29/08,36
+MO,SurveyUSA-2,46,48,9/23/08,42
+MO,Research 2000-3,46,47,9/23/08,42
+MO,Research 2000-4,45,49,9/16/08,49
+MO,ARG-5,45,50,9/13/08,52
+MO,Rasmussen-1,46,51,9/11/08,54
+MO,Opinion Research-3,45,50,9/8/08,57
+MO,Rasmussen-1,41,48,8/7/08,89
+MO,SurveyUSA-3,44,49,7/30/08,97
+MO,Research 2000-4,48,43,7/8/08,119
+MO,Rasmussen-1,42,47,7/7/08,120
+MO,SurveyUSA-3,43,50,6/21/08,136
+MO,Rasmussen-1,43,42,6/3/08,154
+MO,SurveyUSA-3,45,43,5/17/08,171
+MO,Rasmussen-1,41,47,5/6/08,182
+MO,SurveyUSA-3,42,50,4/12/08,206
+MO,Rasmussen-1,38,53,3/24/08,225
+MO,SurveyUSA-3,39,53,3/15/08,234
+MO,SurveyUSA-3,42,48,2/27/08,251
+MO,SurveyUSA-3,49,43,2/16/08,262
+MO,Rasmussen-1,40,42,2/12/08,266
+MO,Election 2004-1,46,53,1/1/08,308
+MT,Rasmussen-1,46,50,10/29/08,6
+MT,Research 2000-3,44,48,10/29/08,6
+MT,ARG-3,46,49,10/29/08,6
+MT,Mason-Dixon-3,44,48,10/24/08,11
+MT,Montana State U.-5,44,40,10/18/08,17
+MT,Research 2000-2,45,49,10/15/08,20
+MT,ARG-3,45,50,10/7/08,28
+MT,Rasmussen-1,44,52,10/1/08,34
+MT,Research 2000-3,39,52,9/23/08,42
+MT,Opinion Research-3,43,54,9/22/08,43
+MT,Rasmussen-1,42,53,9/8/08,57
+MT,ARG-3,47,49,9/8/08,57
+MT,Rasmussen-1,44,45,7/29/08,98
+MT,Rasmussen-1,48,43,7/1/08,126
+MT,Mason-Dixon-3,39,47,5/20/08,168
+MT,Rasmussen-1,43,48,4/6/08,212
+MT,SurveyUSA-3,39,47,2/27/08,251
+MT,Election 2004-1,39,59,1/1/08,308
+NE,Rasmussen-1,37,56,9/30/08,35
+NE,ARG-6,34,60,9/14/08,51
+NE,Rasmussen-1,32,50,7/28/08,99
+NE,Rasmussen-1,36,52,6/23/08,134
+NE,Research 2000-3,29,57,5/20/08,168
+NE,SurveyUSA-3,40,49,5/17/08,171
+NE,Rasmussen-1,39,50,5/15/08,173
+NE,SurveyUSA-3,42,45,2/27/08,251
+NE,Election 2004-1,32,67,1/1/08,308
+NV,Zogby-4,51,43,10/31/08,4
+NV,Mason-Dixon-2,47,43,10/28/08,7
+NV,Rasmussen-1,50,46,10/27/08,8
+NV,Research 2000-4,50,45,10/26/08,9
+NV,Suffolk U.-1,50,40,10/26/08,9
+NV,Opinion Research-6,52,45,10/25/08,10
+NV,Zogby-4,48,44,10/24/08,11
+NV,GfK Roper-4,52,40,10/24/08,11
+NV,Opinion Research-3,51,46,10/20/08,15
+NV,Insider Advantage-1,47,47,10/19/08,16
+NV,Rasmussen-1,50,45,10/16/08,19
+NV,Insider Advantage-1,49,46,10/13/08,22
+NV,Mason-Dixon-2,47,45,10/8/08,27
+NV,Insider Advantage-1,49,47,10/6/08,29
+NV,Research 2000-4,50,43,10/4/08,31
+NV,Rasmussen-1,51,47,10/2/08,33
+NV,Insider Advantage-1,48,47,9/30/08,35
+NV,Opinion Research-3,51,47,9/29/08,36
+NV,ARG-3,47,49,9/28/08,37
+NV,Suffolk U.-5,45,46,9/19/08,46
+NV,ARG-3,46,49,9/13/08,52
+NV,Rasmussen-1,46,49,9/11/08,54
+NV,Insider Advantage-2,45,46,9/9/08,56
+NV,Opinion Research-3,49,44,8/25/08,71
+NV,Research 2000-3,44,43,8/19/08,77
+NV,Mason-Dixon-3,39,46,8/14/08,82
+NV,Rasmussen-1,42,45,8/11/08,85
+NV,Rasmussen-1,42,40,7/16/08,111
+NV,Rasmussen-1,42,45,6/18/08,139
+NV,Mason-Dixon-3,42,44,6/10/08,147
+NV,Rasmussen-1,40,46,5/20/08,168
+NV,Rasmussen-1,43,48,4/21/08,197
+NV,Rasmussen-1,45,41,3/19/08,230
+NV,SurveyUSA-3,46,41,2/27/08,251
+NV,Rasmussen-1,50,38,2/12/08,266
+NV,Election 2004-1,48,51,1/1/08,308
+NH,Rasmussen-1,50,46,10/30/08,5
+NH,SurveyUSA-2,53,42,10/29/08,6
+NH,Research 2000-3,51,44,10/29/08,6
+NH,U. of New Hampshire-3,53,39,10/29/08,6
+NH,ARG-3,56,41,10/29/08,6
+NH,Suffolk U.-3,53,40,10/28/08,7
+NH,U. of New Hampshire-3,58,33,10/26/08,9
+NH,Mason-Dixon-3,50,39,10/24/08,11
+NH,GfK Roper-5,55,37,10/24/08,11
+NH,Rasmussen-1,50,46,10/23/08,12
+NH,Marist Coll.-2,50,45,10/22/08,13
+NH,U. of New Hampshire-5,54,39,10/20/08,15
+NH,Research 2000-3,50,43,10/18/08,17
+NH,ARG-3,52,43,10/7/08,28
+NH,SurveyUSA-2,53,40,10/4/08,31
+NH,Opinion Research-4,53,45,10/4/08,31
+NH,Rasmussen-1,53,43,10/1/08,34
+NH,Saint Anselm Coll.-6,49,37,9/27/08,38
+NH,Rasmussen-1,47,49,9/23/08,42
+NH,Research 2000-3,48,44,9/23/08,42
+NH,Suffolk U.-5,46,45,9/22/08,43
+NH,Financial Dynamics-5,44,43,9/20/08,45
+NH,Marist Coll.-5,51,45,9/19/08,46
+NH,U. of New Hampshire-8,45,47,9/17/08,48
+NH,ARG-3,45,48,9/14/08,51
+NH,Opinion Research-3,51,45,9/8/08,57
+NH,Rasmussen-1,43,42,8/19/08,77
+NH,ARG-3,46,45,8/19/08,77
+NH,Rasmussen-1,47,41,7/23/08,104
+NH,ARG-3,47,45,7/20/08,107
+NH,U. of New Hampshire-10,46,43,7/15/08,112
+NH,Rasmussen-1,50,39,6/18/08,139
+NH,ARG-5,51,39,6/15/08,142
+NH,Rasmussen-1,48,43,5/21/08,167
+NH,Rasmussen-1,41,51,4/30/08,188
+NH,Dartmouth Coll.-5,39,42,4/30/08,188
+NH,U. of New Hampshire-6,43,49,4/27/08,191
+NH,Rasmussen-1,43,46,3/16/08,233
+NH,SurveyUSA-3,46,44,2/27/08,251
+NH,Rasmussen-1,49,36,2/11/08,267
+NH,Election 2004-1,50,49,1/1/08,308
+NJ,SurveyUSA-2,52,42,10/29/08,6
+NJ,Research 2000-3,54,38,10/27/08,8
+NJ,Monmouth U.-7,55,34,10/27/08,8
+NJ,Fairleigh Dickinson U.-7,53,35,10/26/08,9
+NJ,Marist Coll.-2,56,39,10/20/08,15
+NJ,Quinnipiac U.-4,59,36,10/17/08,18
+NJ,Monmouth U.-4,55,38,10/16/08,19
+NJ,SurveyUSA-2,55,40,10/11/08,24
+NJ,Rasmussen-1,50,42,10/7/08,28
+NJ,Fairleigh Dickinson U.-7,50,37,10/2/08,33
+NJ,SurveyUSA-2,52,42,9/27/08,38
+NJ,ARG-3,51,42,9/20/08,45
+NJ,Rasmussen-1,55,42,9/16/08,49
+NJ,Monmouth U.-4,49,41,9/12/08,53
+NJ,Quinnipiac U.-5,48,45,9/12/08,53
+NJ,Research 2000-3,50,41,9/10/08,55
+NJ,Marist Coll.-4,48,45,9/6/08,59
+NJ,Fairleigh Dickinson U.-4,47,41,9/5/08,60
+NJ,Quinnipiac U.-7,51,41,8/7/08,89
+NJ,Rasmussen-1,48,40,8/4/08,92
+NJ,Monmouth U.-5,50,36,7/19/08,108
+NJ,Rasmussen-31,44,39,6/22/08,135
+NJ,Fairleigh Dickinson U.-7,49,33,6/20/08,137
+NJ,Quinnipiac U.-4,45,39,6/6/08,151
+NJ,Rasmussen-1,48,39,6/4/08,153
+NJ,Research 2000-5,48,40,4/27/08,191
+NJ,Monmouth U.-5,56,32,4/26/08,192
+NJ,Rasmussen-1,45,46,3/27/08,222
+NJ,Fairleigh Dickinson U.-7,47,42,3/27/08,222
+NJ,Rasmussen-1,43,45,2/27/08,251
+NJ,SurveyUSA-3,43,43,2/27/08,251
+NJ,Fairleigh Dickinson U.-7,43,38,2/21/08,257
+NJ,Quinnipiac U.-6,46,39,2/15/08,263
+NJ,Election 2004-1,53,47,1/1/08,308
+NM,SurveyUSA-3,52,45,10/30/08,5
+NM,Research and Polling-3,51,43,10/29/08,6
+NM,Rasmussen-1,54,44,10/28/08,7
+NM,Rasmussen-1,55,42,10/13/08,22
+NM,SurveyUSA-2,52,45,10/12/08,23
+NM,Rasmussen-1,49,44,10/1/08,34
+NM,Research and Polling-4,45,40,9/30/08,35
+NM,SurveyUSA-2,52,44,9/29/08,36
+NM,ARG-3,51,44,9/15/08,50
+NM,SurveyUSA-3,52,44,9/15/08,50
+NM,Financial Dynamics-5,49,42,9/13/08,52
+NM,Rasmussen-1,47,49,9/8/08,57
+NM,Opinion Research-3,53,40,8/25/08,71
+NM,Rasmussen-1,47,41,8/20/08,76
+NM,Mason-Dixon-3,41,45,8/14/08,82
+NM,Rasmussen-1,46,41,7/24/08,103
+NM,Rasmussen-1,47,39,6/18/08,139
+NM,SurveyUSA-3,49,46,6/18/08,139
+NM,SurveyUSA-3,44,44,5/17/08,171
+NM,Rasmussen-1,50,41,5/14/08,174
+NM,SurveyUSA-3,44,50,4/12/08,206
+NM,Rasmussen-1,45,42,4/8/08,210
+NM,SurveyUSA-3,51,45,3/15/08,234
+NM,SurveyUSA-3,50,43,2/27/08,251
+NM,Rasmussen-2,44,44,2/17/08,261
+NM,SurveyUSA-3,55,40,2/16/08,262
+NM,SurveyUSA-2,41,50,1/20/08,289
+NM,Election 2004-1,49,50,1/1/08,308
+NY,SurveyUSA-2,62,33,10/27/08,8
+NY,Marist Coll.-2,65,29,10/21/08,14
+NY,Siena Coll.-3,62,31,10/20/08,15
+NY,Rasmussen-1,57,37,10/14/08,21
+NY,SurveyUSA-2,64,31,10/11/08,24
+NY,Siena Coll.-3,58,36,9/29/08,36
+NY,SurveyUSA-2,57,38,9/23/08,42
+NY,Rasmussen-1,55,42,9/15/08,50
+NY,ARG-3,55,38,9/15/08,50
+NY,Siena Coll.-3,46,41,9/9/08,56
+NY,Siena Coll.-4,47,39,8/12/08,84
+NY,Rasmussen-1,52,32,8/4/08,92
+NY,Quinnipiac U.-5,57,36,8/2/08,94
+NY,Siena Coll.-13,44,26,7/23/08,104
+NY,Siena Coll.-4,50,37,7/8/08,119
+NY,Rasmussen-1,60,29,6/30/08,127
+NY,SurveyUSA-3,57,37,6/26/08,131
+NY,Siena Coll.-3,51,33,6/10/08,147
+NY,NY Times-6,51,32,6/8/08,149
+NY,Quinnipiac U.-6,50,36,6/5/08,152
+NY,Rasmussen-1,52,33,5/28/08,160
+NY,SurveyUSA-3,48,38,5/17/08,171
+NY,SurveyUSA-2,48,38,5/16/08,172
+NY,Siena Coll.-3,49,38,5/13/08,175
+NY,Rasmussen-1,52,35,5/1/08,187
+NY,Quinnipiac U.-2,47,39,4/14/08,204
+NY,Siena Coll.-4,45,40,4/14/08,204
+NY,SurveyUSA-3,52,43,4/12/08,206
+NY,Marist Coll.-6,46,48,4/5/08,213
+NY,Quinnipiac U.-3,49,38,3/17/08,232
+NY,SurveyUSA-3,52,44,3/15/08,234
+NY,Rasmussen-1,51,38,3/11/08,238
+NY,SurveyUSA-3,52,38,2/27/08,251
+NY,SurveyUSA-3,57,36,2/16/08,262
+NY,Siena Coll.-4,47,40,2/12/08,266
+NY,SurveyUSA-2,49,43,1/20/08,289
+NY,Siena Coll.-4,44,42,1/15/08,294
+NY,Election 2004-1,58,41,1/1/08,308
+NC,Zogby-4,48,49,10/31/08,4
+NC,Mason-Dixon-2,46,49,10/29/08,6
+NC,Insider Advantage-1,48,48,10/29/08,6
+NC,Rasmussen-1,50,48,10/29/08,6
+NC,Research 2000-3,47,45,10/29/08,6
+NC,Elon U.-4,45,38,10/28/08,7
+NC,Rasmussen-1,48,49,10/26/08,9
+NC,Opinion Research-6,52,46,10/25/08,10
+NC,Financial Dynamics-5,47,43,10/25/08,10
+NC,Zogby-4,50,46,10/24/08,11
+NC,GfK Roper-5,48,46,10/24/08,11
+NC,Rasmussen-1,48,50,10/23/08,12
+NC,Mason-Dixon-3,47,47,10/23/08,12
+NC,Marshall Marketing-2,48,46,10/20/08,15
+NC,Opinion Research-3,51,47,10/20/08,15
+NC,Insider Advantage-1,49,48,10/19/08,16
+NC,Rasmussen-1,51,48,10/19/08,16
+NC,SurveyUSA-3,47,47,10/19/08,16
+NC,Research 2000-2,46,44,10/14/08,21
+NC,Insider Advantage-1,48,46,10/13/08,22
+NC,Rasmussen-1,48,48,10/12/08,23
+NC,Winthrop U.-22,45,44,10/8/08,27
+NC,Rasmussen-1,49,48,10/8/08,27
+NC,Marshall Marketing-2,46,48,10/6/08,29
+NC,SurveyUSA-2,46,49,10/5/08,30
+NC,Opinion Research-4,49,49,10/4/08,31
+NC,Rasmussen-1,50,47,9/30/08,35
+NC,ARG-3,46,49,9/28/08,37
+NC,Rasmussen-1,49,47,9/23/08,42
+NC,Rasmussen-1,47,50,9/18/08,47
+NC,Elon U.-4,35,41,9/16/08,49
+NC,Opinion Research-3,47,48,9/15/08,50
+NC,ARG-4,41,52,9/14/08,51
+NC,Research 2000-3,38,55,9/9/08,56
+NC,SurveyUSA-3,38,58,9/7/08,58
+NC,Insider Advantage-1,43,45,8/19/08,77
+NC,Rasmussen-1,42,46,8/13/08,83
+NC,SurveyUSA-3,45,49,8/10/08,86
+NC,Rasmussen-1,42,45,7/15/08,112
+NC,SurveyUSA-3,45,50,7/13/08,114
+NC,Rasmussen-1,43,45,6/10/08,147
+NC,SurveyUSA-3,43,51,5/18/08,170
+NC,Rasmussen-1,45,48,5/8/08,180
+NC,Research 2000-3,41,50,4/29/08,189
+NC,Rasmussen-1,47,47,4/10/08,208
+NC,Tel Opinion Research-2,39,48,4/9/08,209
+NC,Rasmussen-1,42,51,3/20/08,229
+NC,SurveyUSA-3,45,47,2/27/08,251
+NC,Election 2004-1,44,56,1/1/08,308
+ND,Research 2000-2,46,47,10/28/08,7
+ND,Research 2000-2,45,45,10/14/08,21
+ND,Minnesota State U.-3,45,43,10/7/08,28
+ND,Research 2000-2,40,53,9/16/08,49
+ND,ARG-3,43,52,9/16/08,49
+ND,Rasmussen-1,41,55,9/8/08,57
+ND,DFM Research-5,43,40,8/25/08,71
+ND,Research 2000-3,42,45,7/22/08,105
+ND,Rasmussen-1,43,43,7/8/08,119
+ND,Dakota Wesleyan U.-11,38,44,3/29/08,220
+ND,SurveyUSA-3,46,42,2/27/08,251
+ND,Election 2004-1,36,63,1/1/08,308
+OH,Zogby-4,50,44,10/31/08,4
+OH,Mason-Dixon-2,45,47,10/29/08,6
+OH,SurveyUSA-2,49,45,10/26/08,9
+OH,Columbus Dispatch-10,52,46,10/26/08,9
+OH,Rasmussen-1,49,45,10/26/08,9
+OH,LA Times-3,49,40,10/26/08,9
+OH,Opinion Research-6,51,47,10/25/08,10
+OH,Marist Coll.-3,48,45,10/25/08,10
+OH,Financial Dynamics-5,48,41,10/25/08,10
+OH,Zogby-4,50,45,10/24/08,11
+OH,GfK Roper-5,48,41,10/24/08,11
+OH,Quinnipiac U.-5,51,42,10/24/08,11
+OH,Insider Advantage-1,52,42,10/22/08,13
+OH,U. of Wisconsin-4,53,41,10/20/08,15
+OH,Opinion Research-3,50,46,10/20/08,15
+OH,U. of Cincinnati-5,49,46,10/20/08,15
+OH,Rasmussen-1,47,49,10/19/08,16
+OH,Quinnipiac U.-6,52,38,10/18/08,17
+OH,Suffolk U.-4,51,42,10/17/08,18
+OH,Ohio U.-12,57,41,10/17/08,18
+OH,Mason-Dixon-2,45,46,10/16/08,19
+OH,Rasmussen-1,49,49,10/14/08,21
+OH,SurveyUSA-2,50,45,10/12/08,23
+OH,Rasmussen-1,49,47,10/12/08,23
+OH,Insider Advantage-1,49,44,10/9/08,26
+OH,Marist Coll.-4,49,45,10/6/08,29
+OH,U. of Cincinnati-5,46,48,10/6/08,29
+OH,ARG-4,48,45,10/5/08,30
+OH,Rasmussen-1,47,48,10/5/08,30
+OH,Opinion Research-4,50,47,10/4/08,31
+OH,U. of Akron-22,45,41,10/4/08,31
+OH,ABC News-3,51,45,10/4/08,31
+OH,Washington Post-3,51,45,10/4/08,31
+OH,Insider Advantage-1,47,45,9/29/08,36
+OH,SurveyUSA-2,48,49,9/28/08,37
+OH,Columbus Dispatch-10,49,42,9/28/08,37
+OH,Rasmussen-1,47,48,9/28/08,37
+OH,Quinnipiac U.-3,50,42,9/28/08,37
+OH,Rasmussen-1,46,47,9/23/08,42
+OH,Insider Advantage-1,46,46,9/22/08,43
+OH,Rasmussen-1,46,50,9/21/08,44
+OH,U. of Wisconsin-4,46,45,9/15/08,50
+OH,Opinion Research-3,49,47,9/15/08,50
+OH,Rasmussen-1,45,48,9/14/08,51
+OH,U. of Cincinnati-5,42,48,9/14/08,51
+OH,SurveyUSA-3,45,49,9/13/08,52
+OH,Financial Dynamics-5,41,42,9/13/08,52
+OH,Marist Coll.-5,47,45,9/13/08,52
+OH,Suffolk U.-4,42,46,9/11/08,54
+OH,ARG-4,44,50,9/11/08,54
+OH,Insider Advantage-2,47,48,9/9/08,56
+OH,U. of Cincinnati-6,44,48,9/7/08,58
+OH,Rasmussen-1,44,51,9/7/08,58
+OH,Quinnipiac U.-5,49,44,9/7/08,58
+OH,Opinion Research-3,47,45,9/1/08,64
+OH,Quinnipiac U.-8,44,43,8/20/08,76
+OH,Rasmussen-1,41,45,8/18/08,78
+OH,Columbus Dispatch-10,41,42,8/16/08,80
+OH,U. of Akron-32,40,40,8/1/08,95
+OH,Quinnipiac U.-7,46,44,7/26/08,101
+OH,Rasmussen-1,40,46,7/21/08,106
+OH,SurveyUSA-3,48,46,6/21/08,136
+OH,Rasmussen-1,43,44,6/17/08,140
+OH,Quinnipiac U.-8,48,42,6/12/08,145
+OH,SurveyUSA-3,48,39,5/17/08,171
+OH,Quinnipiac U.-8,40,44,5/16/08,172
+OH,Rasmussen-1,44,45,5/14/08,174
+OH,Quinnipiac U.-7,42,43,4/26/08,192
+OH,SurveyUSA-3,45,47,4/12/08,206
+OH,Rasmussen-1,40,47,4/8/08,210
+OH,Quinnipiac U.-8,43,42,3/27/08,222
+OH,SurveyUSA-3,43,50,3/15/08,234
+OH,Rasmussen-1,40,46,3/13/08,236
+OH,SurveyUSA-3,50,40,2/27/08,251
+OH,U. of Cincinnati-4,48,47,2/22/08,256
+OH,Rasmussen-1,41,42,2/17/08,261
+OH,SurveyUSA-3,47,44,2/16/08,262
+OH,Quinnipiac U.-7,40,42,2/9/08,269
+OH,SurveyUSA-3,43,50,1/5/08,304
+OH,Election 2004-1,49,51,1/1/08,308
+OK,SurveyUSA-2,34,63,10/28/08,7
+OK,SurveyUSA-2,35,59,10/18/08,17
+OK,TV Poll-3,32,63,10/11/08,24
+OK,TV Poll-2,29,66,10/4/08,31
+OK,SurveyUSA-2,34,64,9/28/08,37
+OK,Research 2000-2,36,59,9/16/08,49
+OK,ARG-4,34,61,9/16/08,49
+OK,Rasmussen-1,32,63,9/11/08,54
+OK,SurveyUSA-3,32,65,9/6/08,59
+OK,Sooner Poll-5,24,56,7/21/08,106
+OK,Research 2000-3,38,52,6/10/08,147
+OK,SurveyUSA-3,34,57,2/27/08,251
+OK,Election 2004-1,34,66,1/1/08,308
+OR,Rasmussen-1,54,42,10/30/08,5
+OR,SurveyUSA-2,57,38,10/29/08,6
+OR,Research 2000-3,55,39,10/28/08,7
+OR,SurveyUSA-2,57,38,10/25/08,10
+OR,Northern Arizona U.-10,49,41,10/22/08,13
+OR,Riley Research-11,48,34,10/15/08,20
+OR,Research 2000-2,53,38,10/14/08,21
+OR,Rasmussen-1,54,41,10/14/08,21
+OR,SurveyUSA-2,57,40,10/11/08,24
+OR,Rasmussen-1,54,43,10/9/08,26
+OR,Research 2000-3,53,39,9/23/08,42
+OR,SurveyUSA-2,52,41,9/22/08,43
+OR,ARG-4,52,41,9/20/08,45
+OR,Rasmussen-1,51,47,9/15/08,50
+OR,Davis Hibbitts Midghall-4,50,40,9/12/08,53
+OR,Rasmussen-1,47,37,8/7/08,89
+OR,SurveyUSA-3,48,45,8/3/08,93
+OR,Rasmussen-1,46,37,7/16/08,111
+OR,SurveyUSA-3,48,45,6/18/08,139
+OR,Rasmussen-1,46,38,6/11/08,146
+OR,SurveyUSA-3,49,39,5/17/08,171
+OR,Rasmussen-1,52,38,5/7/08,181
+OR,SurveyUSA-3,51,42,4/12/08,206
+OR,Rasmussen-1,48,42,3/26/08,223
+OR,SurveyUSA-3,50,41,3/15/08,234
+OR,SurveyUSA-3,49,41,2/27/08,251
+OR,SurveyUSA-3,48,47,2/16/08,262
+OR,Rasmussen-1,49,40,2/13/08,265
+OR,Riley Res.-12,46,38,2/12/08,266
+OR,SurveyUSA-3,47,47,1/12/08,297
+OR,Election 2004-1,52,48,1/1/08,308
+PA,Rasmussen-1,52,46,11/1/08,3
+PA,Zogby-4,54,40,10/31/08,4
+PA,Rasmussen-1,51,47,10/30/08,5
+PA,SurveyUSA-3,51,44,10/30/08,5
+PA,ARG-3,51,45,10/30/08,5
+PA,Muhlenberg Coll.-5,52,45,10/30/08,5
+PA,Mason-Dixon-2,47,43,10/27/08,8
+PA,Rasmussen-1,53,46,10/27/08,8
+PA,Marist Coll.-2,55,41,10/26/08,9
+PA,Insider Advantage-1,51,42,10/26/08,9
+PA,Opinion Research-6,55,43,10/25/08,10
+PA,Muhlenberg Coll.-5,53,41,10/25/08,10
+PA,GfK Roper-5,52,40,10/24/08,11
+PA,Siena Coll.-5,53,40,10/24/08,11
+PA,Quinnipiac U.-5,53,41,10/24/08,11
+PA,Franklin+Marshall Coll.-6,53,40,10/23/08,12
+PA,Temple U.-7,50,41,10/23/08,12
+PA,SurveyUSA-2,53,41,10/21/08,14
+PA,U. of Wisconsin-4,52,41,10/20/08,15
+PA,Muhlenberg Coll.-5,52,42,10/20/08,15
+PA,Quinnipiac U.-6,53,40,10/18/08,17
+PA,Financial Dynamics-5,51,41,10/18/08,17
+PA,Susquehanna Polling-4,48,40,10/17/08,18
+PA,Muhlenberg Coll.-5,52,39,10/15/08,20
+PA,SurveyUSA-3,55,40,10/12/08,23
+PA,Muhlenberg Coll.-5,51,38,10/10/08,25
+PA,Muhlenberg Coll.-5,50,39,10/7/08,28
+PA,Marist Coll.-4,53,41,10/6/08,29
+PA,Rasmussen-1,54,41,10/6/08,29
+PA,SurveyUSA-2,55,40,10/5/08,30
+PA,West Chester U.-4,52,42,10/4/08,31
+PA,Muhlenberg Coll.-5,50,40,10/2/08,33
+PA,Rasmussen-1,50,42,9/28/08,37
+PA,Quinnipiac U.-3,54,39,9/28/08,37
+PA,Muhlenberg Coll.-5,49,41,9/27/08,38
+PA,Franklin+Marshall Coll.-6,48,43,9/25/08,40
+PA,Rasmussen-1,49,45,9/24/08,41
+PA,SurveyUSA-2,50,44,9/23/08,42
+PA,Muhlenberg Coll.-5,47,43,9/23/08,42
+PA,Opinion Research-3,53,44,9/22/08,43
+PA,Rasmussen-1,48,45,9/21/08,44
+PA,ARG-3,50,46,9/21/08,44
+PA,Financial Dynamics-5,43,41,9/20/08,45
+PA,Mason-Dixon-3,46,44,9/17/08,48
+PA,U. of Wisconsin-4,45,45,9/15/08,50
+PA,Rasmussen-1,47,47,9/14/08,51
+PA,Marist Coll.-5,49,44,9/13/08,52
+PA,Rasmussen-1,47,45,9/7/08,58
+PA,Quinnipiac U.-5,48,45,9/7/08,58
+PA,Opinion Research-3,48,43,8/25/08,71
+PA,Quinnipiac U.-8,49,42,8/20/08,76
+PA,Rasmussen-1,45,40,8/19/08,77
+PA,Susquehanna Polling-4,46,41,8/12/08,84
+PA,Franklin+Marshall Coll.-7,46,41,8/7/08,89
+PA,Quinnipiac U.-7,49,42,7/26/08,101
+PA,Rasmussen-1,47,42,7/23/08,104
+PA,Rasmussen-1,46,42,6/22/08,135
+PA,Quinnipiac U.-8,52,40,6/12/08,145
+PA,Rasmussen-1,45,43,5/21/08,167
+PA,SurveyUSA-3,48,40,5/17/08,171
+PA,Quinnipiac U.-8,46,40,5/16/08,172
+PA,Susquehanna Polling-6,46,39,5/3/08,185
+PA,Quinnipiac U.-7,47,38,4/26/08,192
+PA,Rasmussen-1,43,44,4/24/08,194
+PA,Rasmussen-1,47,39,4/9/08,209
+PA,Temple U.-14,47,40,4/2/08,216
+PA,Quinnipiac U.-8,43,39,3/27/08,222
+PA,Rasmussen-1,43,44,3/10/08,239
+PA,Susquehanna Polling-6,41,45,3/7/08,242
+PA,SurveyUSA-3,42,47,2/27/08,251
+PA,Franklin+Marshall Coll.-6,43,44,2/15/08,263
+PA,Rasmussen-1,49,39,2/14/08,264
+PA,Muhlenberg Coll.-9,39,42,2/13/08,265
+PA,Quinnipiac U.-7,42,41,2/9/08,269
+PA,Rasmussen-1,38,46,1/8/08,301
+PA,Election 2004-1,51,49,1/1/08,308
+RI,Opinion Factor-2,48,26,9/30/08,35
+RI,Brown U.-2,47,34,9/15/08,50
+RI,Rasmussen-1,58,39,9/13/08,52
+RI,ARG-3,59,33,9/12/08,53
+RI,Brown U.-3,51,30,8/19/08,77
+RI,Rasmussen-1,55,31,6/30/08,127
+RI,Rhode Island Coll.-10,53,25,6/22/08,135
+RI,SurveyUSA-3,53,38,2/27/08,251
+RI,Election 2004-1,60,39,1/1/08,308
+SC,SurveyUSA-2,44,52,10/28/08,7
+SC,Princeton Survey-4,42,53,10/26/08,9
+SC,Rasmussen-1,43,54,10/20/08,15
+SC,SurveyUSA-2,41,55,10/12/08,23
+SC,Winthrop U.-22,35,55,10/8/08,27
+SC,Research 2000-3,39,54,9/23/08,42
+SC,SurveyUSA-2,39,58,9/21/08,44
+SC,Rasmussen-1,45,51,9/18/08,47
+SC,ARG-4,37,59,9/15/08,50
+SC,Research 2000-2,40,53,7/22/08,105
+SC,Rasmussen-1,39,48,6/5/08,152
+SC,SurveyUSA-3,45,48,2/27/08,251
+SC,Election 2004-1,41,58,1/1/08,308
+SD,Rasmussen-1,44,53,10/30/08,5
+SD,Research 2000-3,41,50,10/23/08,12
+SD,Mason-Dixon-3,41,48,10/14/08,21
+SD,ARG-3,39,55,9/20/08,45
+SD,Rasmussen-1,37,54,9/9/08,56
+SD,Rasmussen-1,43,47,7/9/08,118
+SD,Dakota Wesleyan U.-11,34,51,3/29/08,220
+SD,Rasmussen-1,38,48,3/4/08,245
+SD,SurveyUSA-3,43,47,2/27/08,251
+SD,Election 2004-1,38,60,1/1/08,308
+TN,Research 2000-2,38,54,10/21/08,14
+TN,Rasmussen-1,42,54,10/16/08,19
+TN,Rasmussen-1,39,58,9/29/08,36
+TN,Mason-Dixon-3,39,55,9/23/08,42
+TN,Middle Tenn. State U.-13,35,55,9/21/08,44
+TN,Middle Tenn. State U.-13,36,48,9/21/08,44
+TN,ARG-4,36,59,9/17/08,48
+TN,Rasmussen-1,32,56,8/20/08,76
+TN,Rasmussen-1,36,51,6/24/08,133
+TN,Rasmussen-1,31,58,4/3/08,215
+TN,SurveyUSA-3,38,54,2/27/08,251
+TN,Middle Tenn. State U.-13,36,50,2/17/08,261
+TN,Election 2004-1,43,57,1/1/08,308
+TX,Rasmussen-1,44,54,10/21/08,14
+TX,U. of Texas-8,40,51,10/18/08,17
+TX,Research 2000-2,40,52,10/14/08,21
+TX,ARG-4,38,57,10/6/08,29
+TX,Rasmussen-1,43,52,9/29/08,36
+TX,ARG-4,36,57,9/14/08,51
+TX,Rasmussen-1,41,50,8/21/08,75
+TX,Rasmussen-1,41,50,7/30/08,97
+TX,U. of Texas-13,33,43,7/24/08,103
+TX,Rasmussen-1,39,48,6/25/08,132
+TX,Texas Lyceum-9,38,43,6/16/08,141
+TX,Rasmussen-1,39,52,6/2/08,155
+TX,Research 2000-3,39,52,5/6/08,182
+TX,Rasmussen-1,43,48,5/1/08,187
+TX,SurveyUSA-3,46,47,2/27/08,251
+TX,SurveyUSA-3,41,49,2/24/08,254
+TX,Opinion Res.-4,44,52,2/15/08,263
+TX,Election 2004-1,38,61,1/1/08,308
+UT,Dan Jones-7,32,57,10/27/08,8
+UT,Mason-Dixon-3,32,55,10/24/08,11
+UT,ARG-4,29,65,9/11/08,54
+UT,Rasmussen-1,32,64,9/10/08,55
+UT,Dan Jones-4,24,62,9/9/08,56
+UT,Mason-Dixon-3,23,62,8/14/08,82
+UT,Rasmussen-1,33,52,6/19/08,138
+UT,Dan Jones-4,29,57,6/17/08,140
+UT,Dan Jones-7,27,62,5/16/08,172
+UT,SurveyUSA-3,39,50,2/27/08,251
+UT,Election 2004-1,26,71,1/1/08,308
+VT,Research 2000-3,57,36,10/25/08,10
+VT,Rasmussen-1,60,36,10/9/08,26
+VT,ARG-5,56,38,9/20/08,45
+VT,Rasmussen-1,60,36,9/13/08,52
+VT,Research 2000-4,55,36,9/12/08,53
+VT,SurveyUSA-3,63,29,2/27/08,251
+VT,Research 2000-3,57,36,2/20/08,258
+VT,Election 2004-1,59,39,1/1/08,308
+VA,Zogby-4,51,45,10/31/08,4
+VA,SurveyUSA-3,50,46,10/31/08,4
+VA,Mason-Dixon-2,47,44,10/29/08,6
+VA,Marist Coll.-2,51,47,10/26/08,9
+VA,Rasmussen-1,51,47,10/26/08,9
+VA,SurveyUSA-2,52,43,10/25/08,10
+VA,Opinion Research-6,53,44,10/25/08,10
+VA,Financial Dynamics-5,48,44,10/25/08,10
+VA,Zogby-4,52,45,10/24/08,11
+VA,GfK Roper-5,49,42,10/24/08,11
+VA,Washington Post-4,52,44,10/23/08,12
+VA,Roanoke Coll.-8,48,39,10/22/08,13
+VA,Virg. Commonwealth U.-3,51,40,10/21/08,14
+VA,Mason-Dixon-2,47,45,10/20/08,15
+VA,Opinion Research-3,54,44,10/20/08,15
+VA,SurveyUSA-2,51,45,10/18/08,17
+VA,Rasmussen-1,54,44,10/16/08,19
+VA,Christopher Newport U.-4,49,43,10/12/08,23
+VA,Opinion Research-4,53,43,10/12/08,23
+VA,Rasmussen-1,50,47,10/12/08,23
+VA,Winthrop U.-22,45,44,10/8/08,27
+VA,Rasmussen-1,50,48,10/5/08,30
+VA,SurveyUSA-2,53,43,10/4/08,31
+VA,Suffolk U.-3,51,39,10/4/08,31
+VA,Mason-Dixon-3,45,48,9/30/08,35
+VA,Insider Advantage-1,51,45,9/29/08,36
+VA,Opinion Research-3,53,44,9/29/08,36
+VA,Rasmussen-1,50,47,9/28/08,37
+VA,ARG-3,46,49,9/28/08,37
+VA,Rasmussen-1,50,45,9/25/08,40
+VA,Rasmussen-1,48,50,9/21/08,44
+VA,SurveyUSA-3,51,45,9/20/08,45
+VA,ABC News-4,49,46,9/19/08,46
+VA,Washington Post-4,49,46,9/19/08,46
+VA,Mason-Dixon-6,44,47,9/19/08,46
+VA,ARG-4,46,48,9/18/08,47
+VA,Insider Advantage-1,46,48,9/17/08,48
+VA,Rasmussen-1,48,48,9/14/08,51
+VA,SurveyUSA-3,50,46,9/13/08,52
+VA,Financial Dynamics-5,41,48,9/13/08,52
+VA,Christopher Newport U.-5,39,48,9/12/08,53
+VA,Opinion Research-3,46,50,9/8/08,57
+VA,Rasmussen-1,47,49,9/7/08,58
+VA,SurveyUSA-3,47,49,9/6/08,59
+VA,Insider Advantage-1,43,43,8/12/08,84
+VA,Rasmussen-1,46,45,8/12/08,84
+VA,SurveyUSA-3,47,48,8/9/08,87
+VA,Rasmussen-1,44,44,7/16/08,111
+VA,SurveyUSA-3,49,47,6/21/08,136
+VA,Rasmussen-1,45,44,6/12/08,145
+VA,SurveyUSA-3,49,42,5/17/08,171
+VA,Virg. Commonwealth U.-7,36,44,5/15/08,173
+VA,Rasmussen-1,44,47,5/8/08,180
+VA,SurveyUSA-3,44,52,4/12/08,206
+VA,Rasmussen-1,41,52,3/27/08,222
+VA,SurveyUSA-3,48,47,3/15/08,234
+VA,SurveyUSA-3,47,47,2/27/08,251
+VA,Rasmussen-1,44,49,2/19/08,259
+VA,SurveyUSA-3,51,45,2/16/08,262
+VA,SurveyUSA-2,40,52,1/16/08,293
+VA,Election 2004-1,45,54,1/1/08,308
+WA,U. of Washington-5,51,39,10/29/08,6
+WA,SurveyUSA-2,56,39,10/26/08,9
+WA,Rasmussen-1,54,43,10/22/08,13
+WA,U. of Washington-9,55,34,10/22/08,13
+WA,Elway Poll-4,55,36,10/17/08,18
+WA,SurveyUSA-2,56,40,10/12/08,23
+WA,Rasmussen-1,53,43,10/2/08,33
+WA,SurveyUSA-2,54,43,9/21/08,44
+WA,ARG-3,50,44,9/17/08,48
+WA,Rasmussen-1,49,47,9/10/08,55
+WA,Elway Poll-3,45,39,9/7/08,58
+WA,SurveyUSA-3,49,45,9/6/08,59
+WA,SurveyUSA-2,51,44,8/11/08,85
+WA,Rasmussen-1,52,40,8/6/08,90
+WA,Elway Poll-10,47,35,7/26/08,101
+WA,SurveyUSA-3,55,39,7/14/08,113
+WA,Rasmussen-1,51,43,7/9/08,118
+WA,SurveyUSA-3,55,40,6/18/08,139
+WA,Rasmussen-1,53,35,6/9/08,148
+WA,SurveyUSA-3,56,39,6/8/08,149
+WA,Elway Poll-5,44,38,5/23/08,165
+WA,SurveyUSA-3,52,36,5/17/08,171
+WA,Rasmussen-1,51,40,5/12/08,176
+WA,SurveyUSA-1,54,42,5/12/08,176
+WA,SurveyUSA-3,53,40,4/15/08,203
+WA,SurveyUSA-1,51,44,4/7/08,211
+WA,Rasmussen-1,48,43,3/27/08,222
+WA,Elway Poll-3,45,39,3/19/08,230
+WA,SurveyUSA-3,52,41,3/15/08,234
+WA,Rasmussen-1,44,45,2/28/08,250
+WA,SurveyUSA-3,52,38,2/27/08,251
+WA,SurveyUSA-2,55,38,2/3/08,275
+WA,SurveyUSA-3,52,43,1/12/08,297
+WA,Election 2004-1,53,46,1/1/08,308
+WV,Zogby-4,40,50,10/24/08,11
+WV,Research 2000-3,43,49,10/23/08,12
+WV,West Virginia Wesleyan U.-2,44,49,10/20/08,15
+WV,Rasmussen-1,43,52,10/20/08,15
+WV,Opinion Research-3,44,53,10/20/08,15
+WV,Mason-Dixon-2,41,47,10/16/08,19
+WV,Insider Advantage-1,47,49,10/13/08,22
+WV,ARG-5,50,42,10/6/08,29
+WV,Rasmussen-1,42,50,9/24/08,41
+WV,Opinion Research-3,46,50,9/22/08,43
+WV,ARG-3,45,49,9/15/08,50
+WV,Mark Blankenship-4,39,44,9/6/08,59
+WV,Rasmussen-1,37,45,6/2/08,155
+WV,SurveyUSA-3,35,53,2/27/08,251
+WV,Election 2004-1,43,56,1/1/08,308
+WI,SurveyUSA-2,55,39,10/28/08,7
+WI,Research 2000-2,53,42,10/27/08,8
+WI,U. of Wisconsin-8,52,42,10/24/08,11
+WI,U. of Wisconsin-8,54,38,10/24/08,11
+WI,Rasmussen-1,51,44,10/23/08,12
+WI,Research 2000-2,52,41,10/20/08,15
+WI,U. of Wisconsin-4,53,40,10/20/08,15
+WI,SurveyUSA-2,51,43,10/18/08,17
+WI,Financial Dynamics-5,53,40,10/18/08,17
+WI,Mason-Dixon-2,51,39,10/16/08,19
+WI,St. Norbert Coll.-9,51,38,10/13/08,22
+WI,U. of Wisconsin-8,51,36,10/11/08,24
+WI,Quinnipiac U.-5,54,37,10/10/08,25
+WI,Rasmussen-1,54,44,10/6/08,29
+WI,Research 2000-2,51,41,10/5/08,30
+WI,SurveyUSA-2,52,42,10/5/08,30
+WI,Opinion Research-4,51,46,10/4/08,31
+WI,Research 2000-2,49,43,9/22/08,43
+WI,ARG-4,50,45,9/19/08,46
+WI,Quinnipiac U.-8,49,42,9/17/08,48
+WI,U. of Wisconsin-4,45,44,9/15/08,50
+WI,Rasmussen-1,48,46,9/15/08,50
+WI,Opinion Research-3,49,45,9/15/08,50
+WI,Opinion Research-3,50,47,9/15/08,50
+WI,Rasmussen-1,47,43,8/5/08,91
+WI,Wisconsin Policy Res. Inst.-2,44,38,8/3/08,93
+WI,Quinnipiac U.-9,50,39,7/18/08,109
+WI,Rasmussen-1,50,39,7/8/08,119
+WI,Quinnipiac U.-8,52,39,6/20/08,137
+WI,SurveyUSA-4,52,43,6/14/08,143
+WI,U. of Wisconsin-3,50,37,6/9/08,148
+WI,Rasmussen-1,45,43,6/5/08,152
+WI,SurveyUSA-3,48,42,5/17/08,171
+WI,Rasmussen-1,43,47,5/5/08,183
+WI,U. of Wisconsin-10,47,43,4/19/08,199
+WI,SurveyUSA-3,49,44,4/12/08,206
+WI,St. Norbert Coll.-12,46,42,3/30/08,219
+WI,Rasmussen-1,46,48,3/26/08,223
+WI,SurveyUSA-3,48,44,3/15/08,234
+WI,SurveyUSA-3,51,40,2/27/08,251
+WI,Rasmussen-1,44,43,2/21/08,257
+WI,SurveyUSA-3,52,42,2/16/08,262
+WI,Election 2004-1,50,49,1/1/08,308
+WY,Research 2000-3,36,61,10/28/08,7
+WY,SurveyUSA-2,37,58,10/18/08,17
+WY,Research 2000-3,35,58,10/15/08,20
+WY,Mason-Dixon-2,32,58,10/13/08,22
+WY,Research 2000-3,36,57,9/23/08,42
+WY,Rasmussen-1,39,58,9/10/08,55
+WY,ARG-3,28,66,9/10/08,55
+WY,Mason-Dixon-3,25,62,8/14/08,82
+WY,Research 2000-2,40,53,5/20/08,168
+WY,SurveyUSA-3,35,54,2/27/08,251
+WY,Election 2004-1,29,69,1/1/08,308
