@@ -1,0 +1,255 @@
+---
+title: "Class 12"
+author: " "
+header-includes:
+   - \usepackage{pdfpages}
+output:
+  pdf_document: default
+---
+
+```{r setup, echo=F}
+library(knitr)
+opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+```
+
+# Plan
+* Midterm Debrief
+* Polling Error
+* Prediction
+
+# Midterm Debrief
+
+```{r}
+# DO NOT CHANGE THIS CODE, JUST RUN IT
+library(tidyverse)
+download.file("http://107.21.234.10/research/melanesia.csv","melanesia.csv")
+melanesia <- read.csv("melanesia.csv")
+```
+
+Relevant Variables (Measured by polling station)
+obs               Yes if an international observer was present at polling station, and No otherwise
+sdd_2021_f        Vote share for the SDD party in the September 2021 federal elections (outcome variable, 0 to 100) 
+unrest            1 if there was a protest after the 2021 federal election, 0 otherwise
+pop               Total population, per polling station, in 2020
+male              Percentage of eligible voters who registered as male, per polling station, as of August 2021
+v_age             Average age of eligible voters, per polling station, as of August 2021
+income            Average monthly income of eligible voters (ordinal scale from 1 (lowest) to 8 (highest)), per polling station, as of July 2021
+region            One of 3 regional designations for each polling station: Eastern Islands, West, Northern Rim 
+sdd_2017_f        Vote share for the MRR party in the September 2017 federal elections (0 to 100)
+
+
+1.2 Using the information available in the dataset, evaluate the quality of the randomization conducted by the SDD.
+
+```{r}
+melanesia %>% group_by(obs) %>% summarize(
+  mean(pop),
+  mean(male),
+  mean(v_age),
+  mean(income),
+  mean(region=="West"),
+  mean(region=="Eastern Islands"),
+  mean(region=="Northern Rim"),
+  mean(sdd_2017_f))
+```
+
+
+
+# Lecture: Polling Errors
+
+Let's load a survey of Afghan citizens. 
+
+```{r}
+library(tidyverse)
+afghan <- read.csv("./class_data/afghan.csv") %>% filter(list.group!="ISAF")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/afghan.csv","afghan.csv")
+#afghan<- read.csv("afghan.csv") %>% filter(list.group!="ISAF")
+
+```
+
+One of the most common items individuals refuse to respond to in surveys are questions about income. How many fall into this category in the afghan survey?
+
+To determine this, we can use is.na() on the _income_ variable.
+
+```{r}
+
+```
+
+How does non-response vary by other characteristics? Let's look at responses to the income question as a function of employment
+
+```{r}
+
+```
+
+### Short group work
+
+Now let’s assess the list experiment. The relevant variables are:
+
+list.group      Whether respondents saw no sensitive items (Control), or a sensitive item stating that they support the Taliban
+list.response   Number of items on the list respondents agreed with
+
+What percentage of respondents supported the Taliban?
+
+```{r}
+
+```
+
+
+
+# Lecture: Prediction
+
+
+## 2008 Presidential Election
+
+Load the dataset:
+
+```{r}
+library(tidyverse)
+polls08 <- read.csv("./class_data/polls08.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/polls08.csv","polls08.csv")
+#polls08 <- read.csv("polls08.csv")
+
+```
+
+Let's create a new variable called _poll.margin_ that measures the difference in polling support between Obama and McCain:
+
+```{r}
+
+polls08 <- polls08 %>% mutate()
+
+```
+
+In R, we can use ymd() or mdy() to create dates that R can understand
+
+```{r}
+#install.packages("lubridate")
+library(lubridate)
+
+x <- ymd("2021-11-5")
+y <- mdy("10/15/21")
+x - y
+```
+
+Polls tend to get more accurate the closer they get to an election. Let's create a variable called _days_until_ that measures the number of days between a given poll and the election date (November 4 2008).
+
+```{r}
+
+polls08 <- polls08 %>% mutate()
+```
+
+Let’s examine polls within the state of California by filtering
+
+```{r}
+
+
+```
+
+Now, lets sort our data by a particular column. This is going to require some new syntax:   dataset %>% arrange(sort_column)
+
+```{r}
+
+
+```
+
+We can select the first observation using slice(1)
+
+```{r}
+
+```
+
+We can do this for all states at once by returning to the main dataset and using %>% group_by _before_ sorting. 
+
+```{r}
+
+
+
+```
+
+
+# Merging datasets
+
+What if we want to compare the accuracy of our poll results to the actual results? To do that, we will need to merge two datasets together.
+
+Load the actual results: 
+
+```{r}
+pres08 <- read.csv("./class_data/pres08.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/pres08.csv","pres08.csv")
+#pres08 <- read.csv("pres08.csv")
+
+```
+
+Let's create a margin variable in this new dataset that mirrors our prior format (Obama vs Mccain)
+
+```{r}
+pres08 <- pres08 %>% mutate()
+
+```
+
+To merge datasets, we need to find a _key_ that's held in common between the two datasets.
+
+```{r}
+```
+
+We can merge using the following syntax:
+
+dataset1 %>% left_join(dataset2,by="key")
+
+```{r}
+
+
+```
+
+This can result in some duplication of columns. To fix this, we can trim a dataset before merging using select():
+
+```{r}
+
+
+```
+
+# Error
+
+Evaluating Prediction error: Actual - Predicted
+
+```{r}
+
+```
+
+Root mean squared error (RMSE):
+
+sqrt(mean(error^2))
+
+```{r}
+
+```
+
+
+# Group Work
+
+Modify the code to average across all polls conducted _within the last two weeks_ before the election. Does the accuracy increase or decrease compared to looking at the most recent poll?
+
+Coding Steps:
+1. Use filter() to subset the initial polls dataset to include only polls with days_until <= 14
+2. Use %>% group_by() %>% summarise() to create a new dataset based on #1, with the _average_ poll margin in each state
+3. Merge this new dataset to the actual election results (pres08) using left_join()
+4. Create a new variable in the dataset measuring the difference between the averaged polls and the actual results
+5. Compare to the dataset we generate in class using diagnostic tools
+
+```{r}
+```
+
+Explore what happens to the accuracy of the polls if you use different time windows than 14 days. Does the accuracy decrease as you include more polls that are farther away from the election? Or does it increase as we have more polls to work with, thus reducing error?
+
+```{r}
+
+```
+
+
+## Check-in
+
+1. On a scale ranging between 1 (Too Hard) and 10 (Too Easy), how was today's class: 
+2. What was the easiest thing to understand?
+3. What was the most difficult thing to understand?
