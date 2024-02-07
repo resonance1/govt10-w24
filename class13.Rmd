@@ -1,0 +1,137 @@
+---
+title: "Class 13"
+author: " "
+header-includes:
+   - \usepackage{pdfpages}
+output:
+  pdf_document: default
+---
+
+```{r setup, echo=F}
+library(knitr)
+opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+```
+
+# Plan
+* Review of Merging / Model Diagnostics
+* Group work
+* Intro to Regression (Lecture)
+* Regression in R
+
+# Merging and Prediction Error Review
+
+```{r}
+library(tidyverse)
+library(lubridate)
+
+pres08 <- read.csv("./class_data/pres08.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/pres08.csv","pres08.csv")
+#pres08 <- read.csv("pres08.csv")
+
+polls08 <- read.csv("./class_data/polls08.csv") 
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/polls08.csv","polls08.csv")
+#polls08 <- read.csv("polls08.csv")
+
+pres08 <- pres08 %>% mutate(act.margin= Obama - McCain) 
+polls08 <- polls08 %>% mutate(poll.margin = Obama - McCain)
+
+```
+
+Let's filter to the most recent poll in each state, and save it as a new dataset
+
+```{r}
+recent <- polls08
+
+```
+
+Now let's merge the dataset from above to the actual election results, and save it as a new dataset
+
+```{r}
+merged <- 
+```
+
+Create a new variable that measures the error
+
+```{r}
+
+merged <- merged %>% mutate(error=act.margin-poll.margin)
+
+```
+
+Evaluate the quality of our predictions, using RMSE.
+
+```{r}
+
+sqrt(mean(merged$error^2))
+
+```
+
+# Group Work
+
+Modify the code above to average across all polls conducted _within the last two weeks_ before the election. Does the accuracy increase or decrease compared to looking at the most recent poll?
+  
+Coding Steps:
+1. Use filter() to subset the initial polls dataset to include only polls with days.until <= 14
+2. Use %>% group_by() %>% summarise() on the filtered dataset from #1, to obtain the _average_ poll margin in each state. Save the dataset with a new name.
+3. Merge this new dataset to the actual election results (pres08) using left_join()
+4. Create a new variable in the merged dataset measuring the difference between the averaged polls and the actual results
+5. Compare the RMSE to the model we generated in class
+
+```{r}
+
+
+
+
+
+
+
+```
+
+
+# Regression (lecture)
+
+## Regression in R (only if time)
+
+We are going to examine data on support for the Nazi party in Germany in 1933.
+
+```{r}
+library(tidyverse)
+fascism <- read.csv("./class_data/fascism.csv")
+
+#download.file("https://github.com/resonance1/govt10-w24/blob/main/class_data/fascism.csv","fascism.csv")
+#fascism <- read_csv("fascism.csv")
+
+fascism$nazi_voteshare <- fascism$nazivote/fascism$nvoter
+fascism$unemployment_rate <- fascism$nunemployed/fascism$nvoter
+```
+
+Fitting regressions in R is straightforward: we can use the function lm()
+
+```{r}
+y <- fascism$nazi_voteshare
+x <- 
+  
+
+```
+
+To visualize, we can build a scatter plot, and superimpose the regression line on the data using abline():
+
+```{r}
+plot(x,y)
+
+```
+
+# Remember to complete the survey (link posted in Slack)
+
+# Resources
+
+Files > Book Chapters > Data Analysis, CH 4
+
+## Check-in
+
+1. On a scale ranging between 1 (Too Hard) and 10 (Too Easy), how was today's class: 
+2. What was the easiest thing to understand?
+3. What was the most difficult thing to understand?
