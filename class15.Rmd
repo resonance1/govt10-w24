@@ -1,0 +1,183 @@
+---
+title: "Class 15"
+author: " "
+header-includes:
+   - \usepackage{pdfpages}
+output:
+  pdf_document: default
+---
+
+```{r setup, echo=F}
+library(knitr)
+opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+```
+
+# Plan
+* Review
+* Multivariate Regression (lecture)
+* Interpreting multivariate regression coefficients
+
+# Review: Bivariate regression coefficients
+
+Your friend Hildegard wants to model the relationship between each state's Republican vote share in the 2022 Congressional election, and support for Jo Jorgenson (the Libertarian candidate) in the 2020 Presidential election. She downloads data from the internet that is formatted as follows:
+
+Republican Vote Share '22 : Ranges from 0 to 100, where 100 is equivalent to 100% vote share
+Libertarian Vote Share '20 : Ranges from 0 to 1, where 1 is equivalent to 100% vote share
+
+She runs a regression on this data, and obtains the following coefficients: 
+(Republican Vote Share '22) = 48 + 12(Libertarian Vote Share '20) 
+
+Interpret the intercept and coefficient on (Libertarian Vote Share '20) in sentence form.
+
+# Review: R2
+
+```{r}
+denmark <- read.csv("./class_data/denmark.csv")
+afghan <- read.csv("./class_data/afghan.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/denmark.csv","denmark.csv")
+#denmark<- read.csv("denmark.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/afghan.csv","afghan.csv")
+#afghan<- read.csv("afghan.csv")
+
+afghan <- afghan %>% mutate(nonresponse=ifelse(is.na(income),1,0))
+```
+
+Recall the regression where we examined the relationship between the low income rate and the violent crime rate:
+
+```{r}
+x <- denmark$lowincome_rate
+y <- denmark$violentcrime_rate
+
+result <- lm(y~x)
+
+```
+
+What does the R2 mean: ?
+
+Where does it come from?
+
+```{r}
+
+ds <- denmark %>% select(lowincome_rate,violentcrime_rate)
+
+# Prediction from regression
+ds$prediction_regression <- predict(result)
+
+# Guessing the mean
+ds$prediction_mean <- mean(ds$violentcrime_rate,na.rm=T)
+
+# Total Sum of Squares 
+sst <- sum((ds$violentcrime_rate - ds$prediction_mean)^2)
+
+# Explained Sum of Squares
+sse <- sum((ds$prediction_regression - ds$prediction_mean)^2)
+
+sse/sst
+
+summary(result)
+
+
+cor(ds$violentcrime_rate,ds$lowincome_rate,use="complete.obs")^2
+
+```
+
+
+# Lecture: Multivariate Regression
+
+
+# Multivariate Regression in R
+
+Let's return to the Afghan survey non-response example, where we regressed employed on non-response to the income question:
+
+```{r}
+  
+result <- lm(,data=afghan)
+summary(result)
+
+```
+
+Now let's implement a multivariate regression and regress age, educ.years, and employed on non-response:
+
+```{r}
+
+result <- lm(,data=afghan)
+summary(result)
+
+```
+
+###Practice by interpreting these coefficients:
+
+
+employed:
+
+age:
+
+educ.years:
+
+
+Why does the coefficient for employed change? Let's look at correlations:
+
+```{r}
+
+afghan %>% select(employed,age,educ.years) %>% cor()
+
+```
+
+Now let's add a variable to the dataset that is uncorrelated with employed:
+
+```{r}
+# You do not need to know this code
+afghan$really_likes_skittles <- rbinom(nrow(afghan),size=1,prob=.001)
+
+```
+
+Let's add it to the regression. Does the coefficient change? Why or why not?
+
+```{r}
+
+result <- lm(nonresponse ~ employed,data=afghan)
+summary(result)
+
+result <- lm(nonresponse ~ employed + really_likes_skittles,data=afghan)
+summary(result)
+
+```
+
+# Group work
+
+Let's go back to the Danish crime data. Using the candidate variables below, try to maximize R2 by fitting a regression with up to *3* independent variables. Once you find a regression with a high R2, interpret the R2 and each coefficient. If you are not sure what scale a variable is measured on, use hist(variable) to examine the distribution.
+
+Variables:
+
+violentcrime_rate          Violent crime (scaled by population)
+lowincome_rate             Poverty Rate (scaled by population)
+unemp_rate                 Unemployment Rate (scaled by population)
+pct1565                    % of Population Aged 15-65 (scaled by population)
+pctforeign                 % Non-citizen population (scaled by population)
+sd_share                   Social Democratic Share of council seats
+pop                        Population
+eEducationhead             Spending on education, per capita
+eHousinghead               Spending on public housing, per capita
+eSocialhead                Spending on social expenditures, per capita
+eTrafficInfrastructure     Spending on infrastructure, per capita
+eTotalhead                 Total spending, per capita
+seatsDPP                   Council seats held by far-right danish people's party
+
+
+
+```{r}
+#result <- lm(data=denmark,violentcrime_rate ~ )
+summary(result)
+```
+
+[Sentences here]
+
+
+## Check-in
+
+1. On a scale ranging between 1 (Too Hard) and 10 (Too Easy), how was today's class: 
+2. What was the easiest thing to understand?
+3. What was the most difficult thing to understand?
