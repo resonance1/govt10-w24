@@ -1,0 +1,71 @@
+---
+title: "PSET 6"
+author: " "
+header-includes:
+   - \usepackage{pdfpages}
+output:
+  pdf_document: default
+---
+
+```{r setup, echo=F}
+library(knitr)
+opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+```
+
+Loading the datasets:
+
+```{r}
+
+# Note: if not using git, make sure that you move the data folder from the .zip to the same directory as the ps6.rmd file 
+
+# Outcomes
+
+pres08 <- read.csv("data/pres08.csv")
+pres12 <- read.csv("data/pres12.csv")
+pres16 <- read.csv("data/pres16.csv")
+
+# Independent Variables
+# See Canvas for details of each dataset:
+
+#Polls
+polls08 <- read.csv("data/polls08.csv")
+polls12 <- read.csv("data/polls12.csv") 
+polls16 <- read.csv("data/polls16b.csv") 
+polls20 <- read.csv("data/polls20.csv")
+
+# Median Household income
+medianincome <- read.csv("data/medianincome.csv")
+
+# Reported Race and Age
+demographics <- read.csv("data/demographics_full.csv")
+
+# Avg Presidential Job Approval, by Election Year
+pres_approval <- read.csv("data/avg_presidential_approval.csv")
+
+# Unemployment, Population, and Labor Force Participation, by State/Month
+econ <- read.csv("data/econ_local.csv")
+
+
+```
+
+Feel free to add code chunks, keeping the following order:
+
+1. Merging and dataset manipulation:
+
+```{r}
+
+```
+
+2. Code used to test various models:
+
+```{r}
+
+```
+
+3. Code used to generate the final predictions
+
+```{r}
+
+```
+
