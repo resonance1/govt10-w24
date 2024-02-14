@@ -1,0 +1,246 @@
+---
+title: "Class 16"
+author: " "
+header-includes:
+   - \usepackage{pdfpages}
+output:
+  pdf_document: default
+---
+
+```{r setup, echo=F}
+library(knitr)
+opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+```
+
+# Plan
+* Announcements
+* Review of Multivariate Regression
+* Prediction and Forecasting (brief lecture)
+* Forecasting Polls in R
+* Intro to Group Assignment (Election Prediction)
+
+# Review of Multivariate Regression
+
+### Interpretation Practice
+
+Your friend Cornelius wants to model how the density of wind farms influences support for environmental causes within a state. He also suspects that the wealthier the state, the higher the concern for environmental causes.
+
+The variables are defined as follows:
+
+- Support for Environmental Causes: Integer ranging from 0 to 100, where 100 is equivalent to full support
+- State Median Income: In thousand dollars (i.e. 47 = $47000)
+- Wind Farms: Per 100,000 Population (i.e. 3 = 3 wind farms per every 100k people)
+
+You obtain coefficients from a linear regression model:
+
+Support for Environmental Causes = 20 + 0.2(State Median Income) + 2.4(Wind Farms)
+
+Interpret the slope coefficients
+
+
+### Review: Omitted Variable Bias
+
+```{r}
+library(tidyverse)
+library(lubridate)
+denmark <- read.csv("./class_data/denmark.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/denmark.csv","denmark.csv")
+#denmark<- read.csv("denmark.csv")
+```
+
+To further understand multivariate slope coefficients, let's look at 4 variables in the Danish crime dataset:
+
+violentcrime_rate
+pctforeign
+social_head
+unemp_rate
+
+First, let's examine the correlations between them:
+
+```{r}
+
+denmark %>% select(violentcrime_rate,pctforeign,unemp_rate,social_head) %>% 
+  cor(use="complete.obs")
+
+```
+
+Now let's regress pctforeign on violentcrime_rate, and sequentially add additional variables:
+
+```{r}
+
+result <- lm(violentcrime_rate ~ pctforeign,data=denmark)
+summary(result)
+
+#result <- lm(violentcrime_rate ~ pctforeign +,data=denmark)
+summary(result)
+
+#result <- lm(violentcrime_rate ~ pctforeign +,data=denmark)
+summary(result)
+
+```
+
+If something is uncorrelated with either X or Y, adding it to the equation will not change the coefficients. This is true by definition if X is randomized. Let's return to one of the first experiments we analyzed, on resume call back rates by (randomized) race. Here, race was randomized, so it should be uncorrelated with 'sex'.
+
+```{r}
+
+resume <- read.csv("./class_data/resume.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/resume.csv","resume.csv")
+#resume <- read.csv("resume.csv")
+
+
+resume$white <- ifelse(resume$race=="white",1,0)
+resume$female <- ifelse(resume$sex=="female",1,0)
+
+cor(resume$white,resume$female,use="complete.obs")
+```
+
+```{r}
+result <- lm(call ~white, data=resume)
+summary(result)
+
+result <- lm(call ~white + female, data=resume)
+summary(result)
+```
+
+
+
+Determining the strongest predictors:
+
+violentcrime_rate          Violent crime (scaled by population)
+lowincome_rate             Poverty Rate (scaled by population)
+unemp_rate                 Unemployment Rate (scaled by population)
+pct1565                    % of Population Aged 15-65 (scaled by population)
+pctforeign                 % Non-citizen population (scaled by population)
+sd_share                   Social Democratic Share of council seats
+pop                        Population
+eEducationhead             Spending on education, per capita
+eHousinghead               Spending on public housing, per capita
+eSocialhead                Spending on social expenditures, per capita
+eTrafficInfrastructure     Spending on infrastructure, per capita
+eTotalhead                 Total spending, per capita
+seatsDPP                   Council seats held by far-right danish people's party
+
+
+```{r}
+
+ds <- denmark %>% select(violentcrime_rate,lowincome_rate,unemp_rate,pct1565,pctforeign,sd_share,pop,eEducationhead,eHousinghead,
+                         eSocialhead,eTrafficInfrastructure,eTotalhead,seatsDPP)
+
+ds %>% cor()
+
+#result <- lm(violentcrime_rate ~ pctforeign + eTotalhead + eSocialhead,data=denmark)
+#summary(result)
+
+# Machine learning (demonstration only, do not need to know code)
+library(glmnet)
+X <- as.matrix(ds %>% select(-violentcrime_rate))
+y <- as.numeric(ds$violentcrime_rate)
+fit <- cv.glmnet(X, y, family="gaussian", alpha=1)
+coef(fit)
+
+
+#result <- lm(violentcrime_rate ~ ,data=denmark)
+#summary(result)
+
+```
+
+
+# Prediction and Forecasting (brief lecture)
+
+# Prediction in R
+
+We can predict outcomes in R using predict(). Let's predict the violentcrime_rate for a municipality with
+a population that is 2% foreign born (.02), and an unemployment rate of 10% (.1)
+
+```{r}
+result <- lm(violentcrime_rate ~ pctforeign + unemp_rate,data=denmark)
+#new <- data.frame(oldvariablename = newdata)
+predict(result, newdata=new)
+  
+```
+
+Imagine that it is the day before the election in 2012. We want to use polling data to predict the outcome of the _upcoming_ election.
+
+In this situation, we would have to use historic data (2008) to forecast 2012 outcomes.
+
+```{r}
+
+polls08 <- read.csv("./class_data/polls08.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/polls08.csv","polls08.csv")
+#polls08 <- read.csv("polls08.csv")
+
+votes08 <- read.csv("./class_data/pres08.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/pres08.csv","pres08.csv")
+#votes08 <- read.csv("pres08.csv")
+
+votes08$actual.margin <- votes08$Obama - votes08$McCain
+polls08$days.until <- ymd("2008-11-04") - mdy(polls08$middate)
+polls08$margin <- polls08$Obama - polls08$McCain
+```
+
+*Step 1: Fit the training model*
+
+A: Save the most recent poll within each state within a new dataframe called _polls08_latest_
+
+```{r}
+
+#polls08_latest <- polls08 %>%
+```
+
+B: Merge to the actual outcomes in 2008, and fit a bivariate model. Important: use the following lm() syntax: lm(y~x,data=dataframename)
+
+```{r}
+
+#merged08 <- polls08_latest  %>% left_join()
+#result <- lm(,data=merged08)
+summary(result)
+
+```
+
+*Step 2: Predict using test data*
+
+Now, to predict outcomes in 2012, we need a similar set of independent variables from 2012:
+
+```{r}
+polls12 <- read.csv("./class_data/polls12.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/polls12.csv","polls12.csv")
+#polls12 <- read.csv("polls12.csv")
+
+polls12$margin <- polls12$Obama - polls12$Romney
+polls12 <- polls12 %>% group_by(state) %>% arrange(days.until) %>% slice(1)
+```
+
+Create a new dataframe containing just the new independent variable(s). _We need give the variables the same name as in the original regression_
+
+```{r}
+# <- data.frame(#oldvariablename = newdata)
+  
+```
+
+Now, let's predict outcomes in 2012 using the predict() function. Syntax: predict(#regression result vector, newdata = #newdataframe)
+
+```{r}
+
+```
+
+We can relabel vectors using names():
+
+```{r}
+#names() <- 
+```
+
+
+# Intro to group assignment
+
+
+## Check-in
+
+1. On a scale ranging between 1 (Too Hard) and 10 (Too Easy), how was today's class: 
+2. What was the easiest thing to understand?
+3. What was the most difficult thing to understand?
