@@ -1,0 +1,100 @@
+---
+title: "Quiz 3 Practice"
+author: " "
+header-includes:
+   - \usepackage{pdfpages}
+output:
+  pdf_document: default
+---
+
+```{r setup, echo=F}
+library(knitr)
+opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+```
+
+NOTE: These questions are examples from past years. They are not exhaustive; additional concepts or types of data analysis may be covered on the quiz.
+
+
+# Multiple Choice
+
+1. Regression provides the 'line of best fit' by minimizing:
+
+a) The difference between each observation and its average value 
+b) The squared difference between each observation and its average value 
+c) The difference between each observation and its predicted value 
+d) The squared difference between each observation and its predicted value
+
+2. Using data on American states, your colleague fits the following regression model:
+
+Y = Total Murders (per year)
+
+X = Total Cheese Consumption, per year (measured in 1000 tons) 
+
+Y= 102 - 7X 
+
+According to this regression model, what is a state's expected number of total murders, if 10,000 tons of cheese were consumed in a year?
+
+3.  Your colleague wants to model the relationship between each state's average income (measured in thousands of dollars) and the percentage of votes cast for Libertarian party candidates in the latest congressional elections (measured in decimals from 0 to 1, where 1 is equivalent to 100% of votes). She obtains the following results:
+
+Avg. Annual Income = 48 + 7(Percentage of Votes for Libertarian Candidates) 
+
+According to this regression model, what is a state's expected average annual income (in dollars) if 18% of votes were cast for a Libertarian candidate? 
+
+
+
+# Data Problem
+
+We will evaluate how state-level unemployment prior to the election is associated with the performance of the incumbent President. 
+
+Load the following dataset:
+
+```{r}
+library(tidyverse)
+unemp <- read.csv("./class_data/econ_local.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/econ_local.csv","econ_local.csv")
+#unemp<- read.csv("econ_local.csv")
+
+```
+
+Relevant variables:
+
+state            state abbreviation
+Year             year
+Month            month, numbered from 1-12
+unemp_rate       unemployment rate within the state (0 to 100 scale)
+
+Find the average unemployment rate for each state for the 6 months preceding the November 2012 election (i.e. May to October). Save this in a new dataframe called _unemp2012_:
+
+```{r}
+
+```
+
+Merge _unemp2012_ to the actual voting results in 2012, creating a new dataset called _merged_ 
+
+```{r}
+votes12 <- read.csv("./class_data/pres12.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/pres12.csv","pres12.csv")
+#votes12<- read.csv("pres12.csv")
+
+votes12$actual.margin <- votes12$Obama - votes12$Romney
+
+```
+
+Fit a bivariate regression model, where the dependent variable is _actual.margin_, and the independent variable is the average employment rate for each state (calculated above). Interpret the coefficients and the R^2 value.
+
+```{r}
+
+```
+
+Using the regression model, estimate Obama's expected margin of victory in 2012, for a state with an unemployment rate of 12%. 
+
+```{r}
+
+
+```
+
+
+ 
