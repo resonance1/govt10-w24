@@ -1,0 +1,173 @@
+---
+title: "Class 22"
+author: " "
+header-includes:
+   - \usepackage{pdfpages}
+output:
+  pdf_document: default
+---
+
+```{r setup, echo=F,message=FALSE}
+library(knitr)
+library(tidyverse)
+opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
+knitr::opts_chunk$set(error = TRUE)
+```
+
+# Logistics: Office hours, final exam
+
+# Visualizing the null hypothesis 
+
+```{r}
+# Do not need to know this code -- just a demonstration!
+
+resume <- read.csv("./class_data/resume.csv")
+chechen <- read.csv("./class_data/chechen.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/resume.csv","resume.csv")
+#resume <- read.csv("resume.csv")
+
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/chechen.csv","chechen.csv")
+#chechen <- read.csv("chechen.csv")
+
+###### REJECTING THE NULL
+
+
+
+out <- t.test(call ~ race, data=resume,mu=0)
+out
+t <- out$statistic
+
+#### Plot
+n  <- nrow(resume)
+conflevel = .95
+x <- seq(-8, 8, length=100)
+plot(x,dt(x,n-1),lty=1,type="l",xlab="Standard Deviations of Sampling Distribution (Centered on 0)")
+abline(v=qt((1-conflevel)/2,n-1)*-1,col="red")
+abline(v=qt((1-conflevel)/2,n-1),col="red")
+abline(v=t,col="blue")
+
+result <- lm(call ~ race, data=resume)
+summary(result)
+
+###### FAIL TO REJECT THE NULL
+
+out <- t.test(postattack ~ fire, data=chechen,mu=0)
+out
+t <- out$statistic
+#### Plot
+n  <- nrow(chechen)
+conflevel = .95
+x <- seq(-8, 8, length=100)
+plot(x,dt(x,n-1),lty=1,type="l",xlab="Standard Deviations of Sampling Distribution (Centered on 0)")
+abline(v=qt((1-conflevel)/2,n-1)*-1,col="red")
+abline(v=qt((1-conflevel)/2,n-1),col="red")
+abline(v=t,col="blue")
+
+
+result <- lm(postattack ~ fire, data=chechen)
+summary(result)
+
+```
+
+
+# Quick Practice
+
+1. You are evaluating an RCT and examining whether the treated and control groups are similar with respect to background characteristics. You conduct
+a hypothesis test where you hypothesize that the difference in the share of females in each group is 0. Evaluating the hypothesis test, you see a p-value of 0.4
+
+Do you reject or fail to reject the null hypothesis?
+
+What does this imply about the quality of randomization for this variable?
+
+2. Your friend Brunhilda tests another variable (age), evaluating the null hypothesis that the difference in average age between the treated and control groups is 0. She receives a t-statistic of 14. The sample size for the RCT is 2000. 
+
+Do you reject or fail to reject the null hypothesis?
+
+What does this imply about the quality of randomization for this variable?
+
+3. Now you examine the ATE. The 95% confidence interval for the ATE is -0.04 to -0.01. Do you reject or fail to reject the null hypothesis of no effect, at the 95% level?
+
+
+# Reading a regression table
+
+# Review of Group Work 
+
+```{r}
+terrorism <- read.csv("./class_data/terrorism.csv") 
+#download.file("https://raw.githubusercontent.com/resonance1/govt10-w24/main/class_data/terrorism.csv","terrorism.csv")
+#terrorism<- read.csv("terrorism.csv")
+```
+
+Recall that the outcome in this study is voting in the 2002 elections (ge2002), while treatment indicates whether someone was personally linked to someone who died in the attacks. 
+
+Calculate the average treatment effect, and obtain a 95% confidence interval for the ATE. Obtain a p-value, and then evaluate the null hypothesis that the true effect of a personal link to victims on voting behavior is 0.
+
+```{r}
+
+# Approach A - regression
+
+result <- lm(ge2002 ~ treatment,data=terrorism)
+summary(result)
+confint(result)
+
+# p value = 0.018
+# We reject the null hypothesis that the true effect is 0, at the 95% level.
+
+# Approach B: t-test
+
+t.test(terrorism %>% filter(treatment==1) %>% select(ge2002),
+       terrorism %>% filter(treatment==0) %>% select(ge2002),
+       var.equal=F)
+
+# alternate coding:
+t.test(ge2002 ~ treatment,data=terrorism,var.equal=F)
+```
+
+Evaluate whether individuals in the treated and control group are comparable with respect to background characteristics (i.e., the difference in means is 0), using a 95% confidence level. The background characteristics are: ge2000, fam.members, age, party, sex, pct.white, median.income. Note: some variables may have to be recoded
+
+```{r}
+
+# Some recoding needed - t.test requires numeric variables
+
+terrorism <- terrorism %>% mutate(
+  voted_2000 = case_when(
+    voted_2000 == "Y" ~ 1,
+    TRUE ~ 0
+  ),
+  party = case_when(
+    party == "D" ~ 1,
+    TRUE ~ 0
+  ),
+   sex = case_when(
+    sex == "F" ~ 1,
+    TRUE ~ 0
+  )
+)
+
+# Regression
+summary(lm(voted_2000 ~ treatment,data=terrorism))
+# etc...
+
+# t-test (shortcut syntax)
+t.test(voted_2000 ~ treatment,data=terrorism,var.equal=F)
+t.test(fam.members ~ treatment,data=terrorism,var.equal=F)
+t.test(age ~ treatment,data=terrorism,var.equal=F)
+t.test(party ~ treatment,data=terrorism,var.equal=F)
+t.test(sex ~ treatment,data=terrorism,var.equal=F)
+t.test(pct.white ~ treatment,data=terrorism,var.equal=F)
+t.test(median.income ~ treatment,data=terrorism,var.equal=F)
+
+# Or
+summary(lm(treatment ~ voted_2000 + fam.members + age + party + sex + pct.white + median.income,data=terrorism))
+
+```
+
+
+# Group project results!
+
+
+
+
+# What would you like to focus on for Monday's review?
+
